@@ -23,7 +23,7 @@ class SpawnReplacer:
             "description": description,
             "enemies": [e['enemy']['name'] for e in location['enemies'] ]
         }
-        yaml.dump(output, open(description.replace(' ', '_').lower()+'.yaml', "w"))
+        yaml.dump(output, open(description.replace(' ', '_').replace(':', '').lower()+'.yaml', "w"))
     def readLocation(self, fn):
         return yaml.load(open(fn), Loader=yaml.FullLoader)
     def checkLocation(self, location):
@@ -59,12 +59,12 @@ class SpawnReplacer:
             aiparamcode = '{} 000000{}'.format(aiaddr, aiparam)
             replacements.append(modelcode)
             replacements.append(aiparamcode)
-            if self.joker:
-                codes = self.kh2lib.cheatengine.apply_room_joker(self.kh2lib.cheatengine.apply_event_joker(replacements, old_location["event"]), old_location["world"], old_location["room"])
-            else:
-                codes = replacements
-            self.kh2lib.cheatengine.apply_ram_code(codes, comment=comment)
-            self.kh2lib.cheatengine.write_pnach(debug=self.debug)
+        if self.joker:
+            codes = self.kh2lib.cheatengine.apply_room_joker(self.kh2lib.cheatengine.apply_event_joker(replacements, old_location["event"]), old_location["world"], old_location["room"])
+        else:
+            codes = replacements
+        self.kh2lib.cheatengine.apply_ram_code(codes, comment=comment)
+        self.kh2lib.cheatengine.write_pnach(debug=self.debug)
 
 if __name__ == '__main__':
     joker = False if "nojoker" in sys.argv else True
