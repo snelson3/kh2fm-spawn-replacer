@@ -6,6 +6,8 @@ The data is in two files (locations and enemies). They are somewhat complete, bu
 
 The expected usage is to use "python replacer.py write <description>" to dump a yaml file listing the enemies in the room (lookup the room you want in locations.json and use that description). Then edit the names of the enemies you want replaced (lookup the names in enemies.json), making sure to keep the same number of enemies in the list. Then run "python replacer.py replace <filename>" which will create a pnach file (by default the location is ./F266B00B.pnach but you can use a custom path with the environment variable `USE_KH2_PATCHENGINEDIR` )
 
+If you find any issues with the script, please open an issue. Pull requests for bug fixes/new features are also welcome!
+
 # Usage tutorial
 
 Lets say I want to edit the first forced fight in Agrabah. I would run the following command
