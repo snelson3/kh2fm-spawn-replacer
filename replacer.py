@@ -2,10 +2,12 @@ from kh2lib.kh2lib import kh2lib
 import json, yaml, sys
 
 class SpawnReplacer:
-    def __init__(self):
+    def __init__(self, joker=True, debug=False):
         self.kh2lib = kh2lib(cheatsfn="F266B00B.pnach")
         self.locations = json.load(open("locations.json"))
         self.enemies = json.load(open("enemies.json"))
+        self.debug = debug
+        self.joker = joker
     def lookupLocation(self, description):
         for loc in self.locations:
             if loc["description"].lower() == description.lower():
@@ -57,12 +59,17 @@ class SpawnReplacer:
             aiparamcode = '{} 000000{}'.format(aiaddr, aiparam)
             replacements.append(modelcode)
             replacements.append(aiparamcode)
-            codes = self.kh2lib.cheatengine.apply_event_joker(self.kh2lib.cheatengine.apply_room_joker(replacements, old_location["world"], old_location["room"]), old_location["event"])
+            if self.joker:
+                codes = self.kh2lib.cheatengine.apply_room_joker(self.kh2lib.cheatengine.apply_event_joker(replacements, old_location["event"]), old_location["world"], old_location["room"])
+            else:
+                codes = replacements
             self.kh2lib.cheatengine.apply_ram_code(codes, comment=comment)
-            self.kh2lib.cheatengine.write_pnach(debug=True)
+            self.kh2lib.cheatengine.write_pnach(debug=self.debug)
 
 if __name__ == '__main__':
-    sr = SpawnReplacer()
+    joker = False if "nojoker" in sys.argv else True
+    debug = True if "debug" in sys.argv else False
+    sr = SpawnReplacer(joker=joker, debug=debug)
     if sys.argv[1] == 'replace':
         sr.replaceLocation(sr.checkLocation(sr.readLocation(sys.argv[2])))
     if sys.argv[1] == 'write':

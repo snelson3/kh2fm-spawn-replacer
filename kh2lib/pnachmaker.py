@@ -10,7 +10,7 @@ class pnachmaker:
     def apply_room_joker(self, codes, world, room):
         # Joker a list of codes to only be active in this room
         numcodes = toHex(len(codes))
-        return ["E0{}{}{} 0032BAEO".format(numcodes, world, room)] + codes
+        return ["E0{}{}{} 0032BAE0".format(numcodes, room, world)] + codes
     def apply_event_joker(self, codes, event):
         # Joker a list of codes to only be active in this event
         return ["E0{}00{} 0032BAE4".format(toHex(len(codes)+2), event),
