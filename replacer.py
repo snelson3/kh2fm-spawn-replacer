@@ -23,7 +23,7 @@ class SpawnReplacer:
             "description": description,
             "enemies": [e['enemy']['name'] for e in location['enemies'] ]
         }
-        yaml.dump(output, open(description.replace(' ', '_').replace(':', '').lower()+'.yaml', "w"))
+        yaml.dump(output, open(description.replace("/","_").replace(' ', '_').replace(':', '').lower()+'.yaml', "w"))
     def readLocation(self, fn):
         return yaml.load(open(fn), Loader=yaml.FullLoader)
     def checkLocation(self, location):
