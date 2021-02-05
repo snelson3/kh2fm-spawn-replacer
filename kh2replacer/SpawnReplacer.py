@@ -86,6 +86,8 @@ class SpawnReplacer:
             offset = hex(offset_dec)[2:].upper().zfill(8)
             value = "00000000" # I think this is fine but double check
             codes += ["{} {}".format(offset, value)]
+        if "extraCodes" in location and len(location["extraCodes"]) >0:
+            codes += location["extraCodes"]
         if self.joker:
             codes = self.kh2lib.cheatengine.apply_room_joker(self.kh2lib.cheatengine.apply_event_joker(replacements, location_details["event"]), location_details["world"], location_details["room"])
         else:
@@ -98,13 +100,14 @@ class SpawnReplacer:
                 raise Exception("No enemies listed for replacement!")
             loc = {"description":description, "enemies": enemylist, "disableCamera": disableCamera}
         self.replaceLocation(self.checkLocation(loc))
-    def replaceBoss(self, old_boss, new_boss, description=None, disableCamera=False, scaleHP=False, applyFixes=True, teleportJoker=False):
+    def replaceBoss(self, old_boss, new_boss, description=None, disableCamera=False, scaleHP=False, applyFixes=True, teleportJoker=False, extraCodes = []):
         loc = {
             "description": description or "{} Fight".format(old_boss),
             "disableCamera": disableCamera,
             "scaleHP": scaleHP,
             "applyFixes": applyFixes,
             "teleportJoker": teleportJoker,
-            "enemies": [new_boss]
+            "enemies": [new_boss],
+            "extraCodes": extraCodes
         }
         self.performReplacement(loc)
