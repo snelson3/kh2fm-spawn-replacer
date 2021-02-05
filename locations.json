@@ -5534,5 +5534,334 @@
                 "value": "11C58840"
             }
         ]
+    },
+    {
+        "description": "Seifer Fight",
+        "event": "4E",
+        "room": "04",
+        "type": "Boss Fight",
+        "world": "02",
+        "enemies": [
+            {
+                "name": "Seifer",
+                "value": "11C37A90"
+            }
+        ]
+    },
+    {
+        "description": "Hayner Fight",
+        "event": "54",
+        "room": "05",
+        "type": "Boss Fight",
+        "world": "02",
+        "enemies": [
+            {
+                "name": "Hayner",
+                "value": "11C269AC"
+            }
+        ]
+    },
+    {
+        "description": "Vivi Fight",
+        "event": "55",
+        "room": "05",
+        "type": "Boss Fight",
+        "world": "02",
+        "enemies": [
+            {
+                "name": "Vivi",
+                "value": "11C26BF0"
+            }
+        ]
+    },
+    {
+        "description": "Axel I Fight",
+        "event": "57",
+        "room": "05",
+        "type": "Boss Fight",
+        "world": "02",
+        "enemies": [
+            {
+                "name": "Axel I",
+                "value": "11C26ED8"
+            }
+        ]
+    },
+    {
+        "description": "Setzer Fight",
+        "event": "58",
+        "room": "05",
+        "type": "Boss Fight",
+        "world": "02",
+        "enemies": [
+            {
+                "name": "Setzer",
+                "value": "11C2700C"
+            }
+        ]
+    },
+    {
+        "description": "Twilight Thorn Fight",
+        "event": "9D",
+        "room": "22",
+        "type": "Boss Fight",
+        "world": "02",
+        "enemies": [
+            {
+                "name": "Twilight Thorn",
+                "value": "11C59E24"
+            }
+        ]
+    },
+    {
+        "description": "Demyx Fight",
+        "event": "37",
+        "room": "04",
+        "type": "Boss Fight",
+        "world": "04",
+        "enemies": [
+            {
+                "name": "Demyx",
+                "value": "11C4CE7C"
+            }
+        ]
+    },
+    {
+        "description": "Data Demyx Fight",
+        "event": "72",
+        "room": "04",
+        "type": "Boss Fight",
+        "world": "04",
+        "enemies": [
+            {
+                "name": "Data Demyx",
+                "value": "11C4D054"
+            }
+        ]
+    },
+    {
+        "description": "Zexion Fight",
+        "event": "97",
+        "room": "22",
+        "type": "Boss Fight",
+        "world": "04",
+        "enemies": [
+            {
+                "name": "Zexion",
+                "value": "11C597E0"
+            }
+        ]
+    },
+    {
+        "description": "Data Zexion Fight",
+        "event": "98",
+        "room": "22",
+        "type": "Boss Fight",
+        "world": "04",
+        "enemies": [
+            {
+                "name": "Data Zexion",
+                "value": "11C59914"
+            }
+        ]
+    },
+    {
+        "description": "Shadow Stalker Fight",
+        "event": "4E",
+        "room": "05",
+        "type": "Boss Fight",
+        "world": "05",
+        "enemies": [
+            {
+                "name": "Shadow Stalker",
+                "value": "11C5A360"
+            }
+        ]
+    },
+    {
+        "description": "Thresholder Fight",
+        "event": "48",
+        "room": "0B",
+        "type": "Boss Fight",
+        "world": "05",
+        "enemies": [
+            {
+                "name": "Thresholder",
+                "value": "11C55204"
+            }
+        ]
+    },
+    {
+        "description": "Hydra Fight",
+        "event": "AB",
+        "room": "12",
+        "type": "Boss Fight",
+        "world": "06",
+        "enemies": [
+            {
+                "name": "Hydra",
+                "value": "11C566C4"
+            }
+        ]
+    },
+    {
+        "description": "Jafar Fight",
+        "event": "3E",
+        "room": "05",
+        "type": "Boss Fight",
+        "world": "07",
+        "enemies": [
+            {
+                "name": "Jafar",
+                "value": "11C56A28"
+            }
+        ]
+    },
+    {
+        "description": "Riku Fight",
+        "event": "4C",
+        "room": "07",
+        "type": "Boss Fight",
+        "world": "08",
+        "enemies": [
+            {
+                "name": "Riku",
+                "value": "11C32BB4"
+            }
+        ]
+    },
+    {
+        "description": "Groundshaker Fight",
+        "event": "3B",
+        "room": "0F",
+        "type": "Boss Fight",
+        "world": "0A",
+        "enemies": [
+            {
+                "name": "Groundshaker",
+                "value": "11C59F80"
+            }
+        ]
+    },
+    {
+        "description": "Pete TR Fight",
+        "event": "35",
+        "room": "03",
+        "type": "Boss Fight",
+        "world": "0D",
+        "enemies": [
+            {
+                "name": "Pete TR",
+                "value": "11C55BF0"
+            }
+        ]
+    },
+    {
+        "description": "Luxord Fight",
+        "event": "3A",
+        "room": "0E",
+        "type": "Boss Fight",
+        "world": "12",
+        "enemies": [
+            {
+                "name": "Luxord",
+                "value": "11C5358C"
+            }
+        ]
+    },
+    {
+        "description": "Data Luxord Fight",
+        "event": "65",
+        "room": "0E",
+        "type": "Boss Fight",
+        "world": "12",
+        "enemies": [
+            {
+                "name": "Data Luxord",
+                "value": "11C53700"
+            }
+        ]
+    },
+    {
+        "description": "Final Xemnas Fight",
+        "event": "4A",
+        "room": "14",
+        "type": "Boss Fight",
+        "world": "12",
+        "enemies": [
+            {
+                "name": "Final Xemnas",
+                "value": "11C5590C"
+            }
+        ]
+    },
+    {
+        "description": "Data Final Xemnas Fight",
+        "event": "62",
+        "room": "14",
+        "type": "Boss Fight",
+        "world": "12",
+        "enemies": [
+            {
+                "name": "Data Final Xemnas",
+                "value": "11C55AAC"
+            }
+        ]
+    },
+    {
+        "description": "Oogie Boogie Fight",
+        "event": "37",
+        "room": "09",
+        "type": "Boss Fight",
+        "world": "0E",
+        "enemies": [
+            {
+                "name": "NM",
+                "value": "11C4C204"
+            }
+        ]
+    },
+    {
+        "description": "Beast Fight",
+        "event": "45",
+        "room": "03",
+        "type": "Boss Fight",
+        "world": "05",
+        "enemies": [
+            {
+                "name": "The Beast",
+                "value": "11C4CBA0"
+            }
+        ]
+    },
+    {
+        "description": "Barbossa Fight",
+        "event": "3C",
+        "room": "0A",
+        "type": "Boss Fight",
+        "world": "10",
+        "enemies": [
+            {
+                "name": "Barbossa",
+                "value": "11C43330"
+            },
+            {
+                "name": "Illuminator",
+                "value": "11C43370"
+            }
+        ]
+    },
+    {
+        "description": "Grim Reaper II Fight",
+        "event": "36",
+        "room": "01",
+        "type": "Boss Fight",
+        "world": "10",
+        "enemies": [
+            {
+                "name": "Grim Reaper II",
+                "value": "11C5BA78"
+            }
+        ]
     }
 ]
