@@ -2,12 +2,21 @@ from kh2lib.kh2lib import kh2lib
 import json, yaml, sys
 
 class SpawnReplacer:
-    def __init__(self, joker=True, debug=False):
+    def __init__(self, joker=True, debug=False, version="xeemo"):
         self.kh2lib = kh2lib(cheatsfn="F266B00B.pnach")
         self.locations = json.load(open("locations.json"))
         self.enemies = json.load(open("enemies.json"))
         self.debug = debug
         self.joker = joker
+        self.version_offset = self.getVersionOffset(version)
+    def getVersionOffset(self, version):
+        if version in ["vanilla", "jp"]:
+            return 0
+        if version in ["xeemo"]:
+            return 99 # TODO FILL IN WITH REAL NUMBER
+        if version in ["crazycat"]:
+            return 999 # TODO FILL IN WITH REAL NUMBER
+        raise Exception("unknown version")
     def lookupLocation(self, description):
         for loc in self.locations:
             if loc["description"].lower() == description.lower():
@@ -21,7 +30,7 @@ class SpawnReplacer:
         location = self.lookupLocation(description)
         output = {
             "description": description,
-            "enemies": [e['enemy']['name'] for e in location['enemies'] ]
+            "enemies": [e['name'] for e in location['enemies'] ]
         }
         yaml.dump(output, open(description.replace("/","_").replace(' ', '_').replace(':', '').lower()+'.yaml', "w"))
     def readLocation(self, fn):
@@ -41,6 +50,16 @@ class SpawnReplacer:
         if new_size > old_size:
             print("Warning: New memory use ({}) is {}% of old memory use, requires testing to see if the game can handle it".format(new_size,usage_percent))
         return location
+    def replaceEnemy(self, new_enemy, location, spawn):
+        addr = spawn["value"]
+        ucm = new_enemy["ucm"]
+        aiparam = '01' if new_enemy["aiparam"] == '1' else '00'
+        
+        modelcode = '{} 00{}{}'.format(addr.upper(), aiparam, ucm.upper())
+        aiaddr = hex(int(addr, 16)+32)[2:].upper().zfill(8)
+        aiparamcode = '{} 000000{}'.format(aiaddr, aiparam)
+        codes = [modelcode, aiparamcode]
+        return codes
     def replaceLocation(self, location):
         old_location = self.lookupLocation(location["description"])
         replacements = []
@@ -50,15 +69,9 @@ class SpawnReplacer:
             spawn = old_location["enemies"][e]
             if spawn["name"] == new["name"]:
                 continue # This spawn is not changing, no code needed
-            addr = spawn["value"]
-            ucm = new["ucm"]
-            aiparam = '01' if new["aiparam"] == '1' else '00' 
-            comment += "\n// Replacing {} with {}".format(spawn["enemy"]["name"], new["name"])
-            modelcode = '{} 00{}{}'.format(addr.upper(), aiparam, ucm.upper())
-            aiaddr = hex(int(addr, 16)+32)[2:].upper().zfill(8)
-            aiparamcode = '{} 000000{}'.format(aiaddr, aiparam)
-            replacements.append(modelcode)
-            replacements.append(aiparamcode)
+            comment += "\n// Replacing {}) {} with {}".format(e,spawn["name"], new["name"])
+            codes = self.replaceEnemy(new, location, spawn)
+            replacements = replacements + codes
         if self.joker:
             codes = self.kh2lib.cheatengine.apply_room_joker(self.kh2lib.cheatengine.apply_event_joker(replacements, old_location["event"]), old_location["world"], old_location["room"])
         else:
