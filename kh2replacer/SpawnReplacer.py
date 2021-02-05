@@ -1,6 +1,8 @@
 from kh2lib.kh2lib import kh2lib
 import json, yaml, sys
 
+CAMERA_START_OFFSET = 0x1C
+
 class SpawnReplacer:
     def __init__(self, joker=True, debug=False, version="xeemo"):
         self.kh2lib = kh2lib(cheatsfn="F266B00B.pnach")
@@ -30,6 +32,7 @@ class SpawnReplacer:
         location = self.lookupLocation(description)
         output = {
             "description": description,
+            "disableCamera": False,
             "enemies": [e['name'] for e in location['enemies'] ]
         }
         yaml.dump(output, open(description.replace("/","_").replace(' ', '_').replace(':', '').lower()+'.yaml', "w"))
@@ -37,13 +40,13 @@ class SpawnReplacer:
         return yaml.load(open(fn), Loader=yaml.FullLoader)
     def checkLocation(self, location):
         description = location["description"]
-        old_location = self.lookupLocation(description)
-        old_len = len(old_location["enemies"])
+        location_details = self.lookupLocation(description)
+        old_len = len(location_details["enemies"])
         new_len = len(location["enemies"])
         if old_len != new_len:
             raise Exception("File contained {} enemies, needs {}!".format(new_len, old_len))
-        old_size = old_location["size_inc_enemies"]
-        new_size = old_location["size"]
+        old_size = location_details["size_inc_enemies"]
+        new_size = location_details["size"]
         for enemy in location["enemies"]:
             new_size += self.lookupEnemy(enemy)["size"]
         usage_percent = int(new_size / old_size * 100)
@@ -61,25 +64,37 @@ class SpawnReplacer:
         codes = [modelcode, aiparamcode]
         return codes
     def replaceLocation(self, location):
-        old_location = self.lookupLocation(location["description"])
+        disableCamera = "disableCamera" in location and location["disableCamera"]
+            
+        location_details = self.lookupLocation(location["description"])
         replacements = []
         comment = "Location: {}".format(location["description"])
         for e in range(len(location["enemies"])):
             new = self.lookupEnemy(location["enemies"][e])
-            spawn = old_location["enemies"][e]
+            spawn = location_details["enemies"][e]
             if spawn["name"] == new["name"]:
                 continue # This spawn is not changing, no code needed
             comment += "\n// Replacing {}) {} with {}".format(e,spawn["name"], new["name"])
-            codes = self.replaceEnemy(new, location, spawn)
-            replacements = replacements + codes
+            replacement = self.replaceEnemy(new, location, spawn)
+            replacements = replacements + replacement
+        codes = replacements
+        if disableCamera:
+            if not "msn_offset" in location_details:
+                raise Exception("MSN Offset needed") 
+            comment += "\n// Disabling intro camera"
+            offset_dec = int(location_details["msn_offset"],16) + self.version_offset + CAMERA_START_OFFSET # Verify this is correct
+            offset = hex(offset_dec)[2:].upper().zfill(8)
+            value = "00000000" # I think this is fine but double check
+            codes += ["{} {}".format(offset, value)]
         if self.joker:
-            codes = self.kh2lib.cheatengine.apply_room_joker(self.kh2lib.cheatengine.apply_event_joker(replacements, old_location["event"]), old_location["world"], old_location["room"])
+            codes = self.kh2lib.cheatengine.apply_room_joker(self.kh2lib.cheatengine.apply_event_joker(replacements, location_details["event"]), location_details["world"], location_details["room"])
         else:
             codes = replacements
         self.kh2lib.cheatengine.apply_ram_code(codes, comment=comment)
         self.kh2lib.cheatengine.write_pnach(debug=self.debug)
-    def performReplacement(self, description, enemylist=None):
-        if not enemylist:
-            raise Exception("No enemies listed for replacement!")
-        loc = {"description":description, "enemies": enemylist}
+    def performReplacement(self, loc=None, description=None, enemylist=None, disableCamera=False):
+        if not loc:
+            if not enemylist:
+                raise Exception("No enemies listed for replacement!")
+            loc = {"description":description, "enemies": enemylist, "disableCamera": disableCamera}
         self.replaceLocation(self.checkLocation(loc))
