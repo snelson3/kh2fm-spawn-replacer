@@ -107,7 +107,7 @@ class SpawnReplacer:
             "scaleHP": scaleHP,
             "applyFixes": applyFixes,
             "teleportJoker": teleportJoker,
-            "enemies": [new_boss],
+            "enemies": [new_boss] if type(new_boss) == str else new_boss, # assuming str or array type
             "extraCodes": extraCodes
         }
         self.performReplacement(loc)
