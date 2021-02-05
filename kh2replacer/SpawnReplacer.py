@@ -98,3 +98,13 @@ class SpawnReplacer:
                 raise Exception("No enemies listed for replacement!")
             loc = {"description":description, "enemies": enemylist, "disableCamera": disableCamera}
         self.replaceLocation(self.checkLocation(loc))
+    def replaceBoss(self, old_boss, new_boss, description=None, disableCamera=False, scaleHP=False, applyFixes=True, teleportJoker=False):
+        loc = {
+            "description": description or "{} Fight".format(old_boss),
+            "disableCamera": disableCamera,
+            "scaleHP": scaleHP,
+            "applyFixes": applyFixes,
+            "teleportJoker": teleportJoker,
+            "enemies": [new_boss]
+        }
+        self.performReplacement(loc)

@@ -5541,8 +5541,8 @@
         "room": "04",
         "type": "Boss Fight",
         "world": "02",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Seifer",
@@ -5556,8 +5556,8 @@
         "room": "05",
         "type": "Boss Fight",
         "world": "02",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Hayner",
@@ -5571,8 +5571,8 @@
         "room": "05",
         "type": "Boss Fight",
         "world": "02",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Vivi",
@@ -5586,8 +5586,8 @@
         "room": "05",
         "type": "Boss Fight",
         "world": "02",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Axel I",
@@ -5601,8 +5601,8 @@
         "room": "05",
         "type": "Boss Fight",
         "world": "02",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Setzer",
@@ -5616,8 +5616,8 @@
         "room": "22",
         "type": "Boss Fight",
         "world": "02",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Twilight Thorn",
@@ -5631,8 +5631,8 @@
         "room": "04",
         "type": "Boss Fight",
         "world": "04",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Demyx",
@@ -5646,8 +5646,8 @@
         "room": "04",
         "type": "Boss Fight",
         "world": "04",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Data Demyx",
@@ -5661,8 +5661,8 @@
         "room": "22",
         "type": "Boss Fight",
         "world": "04",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Zexion",
@@ -5676,8 +5676,8 @@
         "room": "22",
         "type": "Boss Fight",
         "world": "04",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Data Zexion",
@@ -5691,8 +5691,8 @@
         "room": "05",
         "type": "Boss Fight",
         "world": "05",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Shadow Stalker",
@@ -5706,8 +5706,8 @@
         "room": "0B",
         "type": "Boss Fight",
         "world": "05",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Thresholder",
@@ -5721,8 +5721,8 @@
         "room": "12",
         "type": "Boss Fight",
         "world": "06",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Hydra",
@@ -5736,8 +5736,8 @@
         "room": "05",
         "type": "Boss Fight",
         "world": "07",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Jafar",
@@ -5751,8 +5751,8 @@
         "room": "07",
         "type": "Boss Fight",
         "world": "08",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Riku",
@@ -5766,8 +5766,8 @@
         "room": "0F",
         "type": "Boss Fight",
         "world": "0A",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Groundshaker",
@@ -5781,8 +5781,8 @@
         "room": "03",
         "type": "Boss Fight",
         "world": "0D",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Pete TR",
@@ -5796,8 +5796,8 @@
         "room": "0E",
         "type": "Boss Fight",
         "world": "12",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Luxord",
@@ -5811,8 +5811,8 @@
         "room": "0E",
         "type": "Boss Fight",
         "world": "12",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Data Luxord",
@@ -5826,8 +5826,8 @@
         "room": "14",
         "type": "Boss Fight",
         "world": "12",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Final Xemnas",
@@ -5841,8 +5841,8 @@
         "room": "14",
         "type": "Boss Fight",
         "world": "12",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Data Final Xemnas",
@@ -5856,8 +5856,8 @@
         "room": "09",
         "type": "Boss Fight",
         "world": "0E",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "NM",
@@ -5871,8 +5871,8 @@
         "room": "03",
         "type": "Boss Fight",
         "world": "05",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "The Beast",
@@ -5886,8 +5886,8 @@
         "room": "0A",
         "type": "Boss Fight",
         "world": "10",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Barbossa",
@@ -5905,8 +5905,8 @@
         "room": "01",
         "type": "Boss Fight",
         "world": "10",
-        "size": 0,
-        "size_inc_enemies": 0,
+        "size": 1,
+        "size_inc_enemies": 1,
         "enemies": [
             {
                 "name": "Grim Reaper II",
