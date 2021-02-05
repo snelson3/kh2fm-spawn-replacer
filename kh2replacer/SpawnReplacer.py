@@ -48,7 +48,7 @@ class SpawnReplacer:
         for e in range(len(location["enemies"])):
             new = self.lookupEnemy(location["enemies"][e])
             spawn = old_location["enemies"][e]
-            if spawn["enemy"]["name"] == new["name"]:
+            if spawn["name"] == new["name"]:
                 continue # This spawn is not changing, no code needed
             addr = spawn["value"]
             ucm = new["ucm"]
