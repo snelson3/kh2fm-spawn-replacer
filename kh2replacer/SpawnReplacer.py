@@ -2,6 +2,7 @@ from kh2lib.kh2lib import kh2lib
 import json, yaml, sys
 
 CAMERA_START_OFFSET = 0x1C
+ENMP_START_OFFSET = 0x0
 
 class SpawnReplacer:
     def __init__(self, joker=True, debug=False, version="xeemo"):
@@ -33,6 +34,7 @@ class SpawnReplacer:
         output = {
             "description": description,
             "disableCamera": False,
+            "scaleHP": False,
             "enemies": [e['name'] for e in location['enemies'] ]
         }
         yaml.dump(output, open(description.replace("/","_").replace(' ', '_').replace(':', '').lower()+'.yaml', "w"))
@@ -65,7 +67,8 @@ class SpawnReplacer:
         return codes
     def replaceLocation(self, location):
         disableCamera = "disableCamera" in location and location["disableCamera"]
-            
+        scaleHP = "scaleHP" in location and location["scaleHP"]
+        # WORKING ON SCALEHP CHANGE
         location_details = self.lookupLocation(location["description"])
         replacements = []
         comment = "Location: {}".format(location["description"])
