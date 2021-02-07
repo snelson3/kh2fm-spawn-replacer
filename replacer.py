@@ -40,6 +40,8 @@ class SpawnReplacer:
         usage_percent = int(new_size / old_size * 100)
         if new_size > old_size:
             print("Warning: New memory use ({}) is {}% of old memory use, requires testing to see if the game can handle it".format(new_size,usage_percent))
+        else:
+            print("using {}% of old memory use ({})".format(usage_percent, new_size))
         return location
     def replaceLocation(self, location):
         old_location = self.lookupLocation(location["description"])
