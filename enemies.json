@@ -7,7 +7,8 @@
         "size": 603180,
         "spawns": [],
         "type": "enemy",
-        "ucm": "096D"
+        "ucm": "096D",
+        "enmp": 227
     },
     "Aeroplane WI": {
         "aiparam": "",
@@ -17,7 +18,8 @@
         "size": 245100,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0724"
+        "ucm": "0724",
+        "enmp": 57
     },
     "Air Pirate": {
         "aiparam": "",
@@ -27,7 +29,8 @@
         "size": 603320,
         "spawns": [],
         "type": "enemy",
-        "ucm": "004A"
+        "ucm": "004A",
+        "enmp": 3
     },
     "Anti-Sora": {
         "aiparam": "",
@@ -38,6 +41,7 @@
         "spawns": [],
         "type": "extra",
         "ucm": "0934"
+
     },
     "Armor Xemnas": {
         "aiparam": "",
@@ -47,7 +51,8 @@
         "size": 1150276,
         "spawns": [],
         "type": "boss",
-        "ucm": "085C"
+        "ucm": "085C",
+        "enmp": 160
     },
     "Armored Knight": {
         "aiparam": "",
@@ -57,7 +62,8 @@
         "size": 462904,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0131"
+        "ucm": "0131",
+        "enmp": 36 
     },
     "Assassin": {
         "aiparam": "",
@@ -67,7 +73,8 @@
         "size": 1531924,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0135"
+        "ucm": "0135",
+        "enmp": 45
     },
     "Assault Rider": {
         "aiparam": "",
@@ -77,7 +84,8 @@
         "size": 1404236,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0009"
+        "ucm": "0009",
+        "enmp": 60
     },
     "Axel I": {
         "aiparam": "1",
@@ -97,7 +105,8 @@
         "size": 2741104,
         "spawns": [],
         "type": "boss",
-        "ucm": "0051"
+        "ucm": "0051",
+        "enmp": 148
     },
     "Banzai": {
         "aiparam": "",
@@ -107,7 +116,8 @@
         "size": 699684,
         "spawns": [],
         "type": "boss",
-        "ucm": "029A"
+        "ucm": "029A",
+        "enmp": 91
     },
     "Barbossa": {
         "aiparam": "",
@@ -119,7 +129,8 @@
             "05E6"
         ],
         "type": "boss",
-        "ucm": "03F7"
+        "ucm": "03F7",
+        "enmp": 99
     },
     "Barrel": {
         "aiparam": "",
@@ -129,7 +140,8 @@
         "size": 1006700,
         "spawns": [],
         "type": "boss",
-        "ucm": "0081"
+        "ucm": "0081",
+        "enmp": 17
     },
     "Barrel Dummy": {
         "aiparam": "",
@@ -159,7 +171,8 @@
         "size": 298036,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0964"
+        "ucm": "0964",
+        "enmp": 225
     },
     "Berserker": {
         "aiparam": "",
@@ -171,7 +184,8 @@
             "06BF"
         ],
         "type": "enemy",
-        "ucm": "0139"
+        "ucm": "0139",
+        "enmp": 49
     },
     "Berserker Sword": {
         "aiparam": "",
@@ -191,7 +205,8 @@
         "size": 1191968,
         "spawns": [],
         "type": "boss",
-        "ucm": "040C"
+        "ucm": "040C",
+        "enmp": 123
     },
     "Bolt Tower": {
         "aiparam": "",
@@ -201,7 +216,8 @@
         "size": 337392,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0627"
+        "ucm": "0627",
+        "enmp": 39
     },
     "Bolt Tower DC": {
         "aiparam": "",
@@ -211,7 +227,8 @@
         "size": 669940,
         "spawns": [],
         "type": "enemy",
-        "ucm": "08F0"
+        "ucm": "08F0",
+        "enmp": 39
     },
     "Cannon Gun": {
         "aiparam": "",
@@ -221,7 +238,8 @@
         "size": 280926,
         "spawns": [],
         "type": "enemy",
-        "ucm": "000E"
+        "ucm": "000E",
+        "enmp": 65
     },
     "Card Sora": {
         "aiparam": "",
@@ -241,7 +259,8 @@
         "size": 2494584,
         "spawns": [],
         "type": "boss",
-        "ucm": "015F"
+        "ucm": "015F",
+        "enmp": 199
     },
     "Cloud": {
         "aiparam": "1",
@@ -251,7 +270,8 @@
         "size": 1642502,
         "spawns": [],
         "type": "boss",
-        "ucm": "08F9"
+        "ucm": "08F9",
+        "enmp": 181
     },
     "Creeper": {
         "aiparam": "",
@@ -261,7 +281,8 @@
         "size": 563598,
         "spawns": [],
         "type": "enemy",
-        "ucm": "013D"
+        "ucm": "013D",
+        "enmp": 52
     },
     "Crescendo": {
         "aiparam": "",
@@ -271,7 +292,8 @@
         "size": 343104,
         "spawns": [],
         "type": "enemy",
-        "ucm": "007C"
+        "ucm": "007C",
+        "enmp": 13
     },
     "Crimson Jazz": {
         "aiparam": "",
@@ -281,7 +303,8 @@
         "size": 290842,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0049"
+        "ucm": "0049",
+        "enmp": 2
     },
     "Crimson Jazz AL": {
         "aiparam": "",
@@ -291,7 +314,8 @@
         "size": 285258,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0760"
+        "ucm": "0760",
+        "enmp": 2
     },
     "Dancer": {
         "aiparam": "",
@@ -301,7 +325,8 @@
         "size": 951352,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0138"
+        "ucm": "0138",
+        "enmp": 48
     },
     "Dark Thorn": {
         "aiparam": "",
@@ -311,7 +336,8 @@
         "size": 2177276,
         "spawns": [],
         "type": "boss",
-        "ucm": "0162"
+        "ucm": "0162",
+        "enmp": 22
     },
     "Data Axel": {
         "aiparam": "",
@@ -321,7 +347,8 @@
         "size": 2742180,
         "spawns": [],
         "type": "boss",
-        "ucm": "09C4"
+        "ucm": "09C4",
+        "enmp": 245
     },
     "Data Demyx": {
         "aiparam": "",
@@ -333,7 +360,8 @@
             "09FA"
         ],
         "type": "boss",
-        "ucm": "09CC"
+        "ucm": "09CC",
+        "enmp": 240
     },
     "Data Demyx Water Clone": {
         "aiparam": "",
@@ -353,7 +381,8 @@
         "size": 4538944,
         "spawns": [],
         "type": "boss",
-        "ucm": "09CA"
+        "ucm": "09CA",
+        "enmp": 239
     },
     "Data Larxene": {
         "aiparam": "1",
@@ -363,7 +392,8 @@
         "size": 4443212,
         "spawns": [],
         "type": "boss",
-        "ucm": "0962"
+        "ucm": "0962",
+        "enmp": 216
     },
     "Data Lexaeus": {
         "aiparam": "1",
@@ -373,7 +403,8 @@
         "size": 2359752,
         "spawns": [],
         "type": "boss",
-        "ucm": "0935"
+        "ucm": "0935",
+        "enmp": 214
     },
     "Data Luxord": {
         "aiparam": "",
@@ -387,7 +418,8 @@
             "0602"
         ],
         "type": "boss",
-        "ucm": "09C8"
+        "ucm": "09C8",
+        "enmp": 243
     },
     "Data Marluxia": {
         "aiparam": "1",
@@ -397,7 +429,8 @@
         "size": 3252168,
         "spawns": [],
         "type": "boss",
-        "ucm": "0923"
+        "ucm": "0923",
+        "enmp": 215
     },
     "Data Roxas": {
         "aiparam": "1",
@@ -410,7 +443,8 @@
             "0953"
         ],
         "type": "boss",
-        "ucm": "0951"
+        "ucm": "0951",
+        "enmp": 242
     },
     "Data Saix": {
         "aiparam": "",
@@ -422,7 +456,8 @@
             "09FC"
         ],
         "type": "boss",
-        "ucm": "09C6"
+        "ucm": "09C6",
+        "enmp": 253
     },
     "Data Saix Claymore": {
         "aiparam": "",
@@ -444,7 +479,8 @@
             "0934"
         ],
         "type": "boss",
-        "ucm": "0933"
+        "ucm": "0933",
+        "enmp": 200
     },
     "Data Xaldin": {
         "aiparam": "",
@@ -454,7 +490,8 @@
         "size": 2741808,
         "spawns": [],
         "type": "boss",
-        "ucm": "09CB"
+        "ucm": "09CB",
+        "enmp": 246
     },
     "Data Xemnas": {
         "aiparam": "",
@@ -464,7 +501,8 @@
         "size": 2607964,
         "spawns": [],
         "type": "boss",
-        "ucm": "09C9"
+        "ucm": "09C9",
+        "enmp": 239
     },
     "Data Xigbar": {
         "aiparam": "",
@@ -474,7 +512,8 @@
         "size": 557240,
         "spawns": [],
         "type": "boss",
-        "ucm": "09C5"
+        "ucm": "09C5",
+        "enmp": 252
     },
     "Data Zexion": {
         "aiparam": "1",
@@ -484,7 +523,8 @@
         "size": 1939060,
         "spawns": [],
         "type": "boss",
-        "ucm": "097B"
+        "ucm": "097B",
+        "enmp": 217
     },
     "Demyx": {
         "aiparam": "",
@@ -496,7 +536,8 @@
             "04A0"
         ],
         "type": "boss",
-        "ucm": "08F7"
+        "ucm": "08F7",
+        "enmp": 88
     },
     "Demyx OC": {
         "aiparam": "",
@@ -528,7 +569,8 @@
         "size": 941282,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0010"
+        "ucm": "0010",
+        "enmp": 66
     },
     "Dice Sora": {
         "aiparam": "",
@@ -558,7 +600,8 @@
         "size": 1209752,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0134"
+        "ucm": "0134",
+        "enmp": 44
     },
     "Driller Mole": {
         "aiparam": "",
@@ -568,7 +611,8 @@
         "size": 469358,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0012"
+        "ucm": "0012",
+        "enmp": 68
     },
     "Driller Mole NM": {
         "aiparam": "",
@@ -578,7 +622,8 @@
         "size": 469870,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0729"
+        "ucm": "0729",
+        "enmp": 68
     },
     "Dusk": {
         "aiparam": "",
@@ -588,7 +633,8 @@
         "size": 1013040,
         "spawns": [],
         "type": "enemy",
-        "ucm": "013E"
+        "ucm": "013E",
+        "enmp": 41
     },
     "Ed": {
         "aiparam": "",
@@ -598,7 +644,8 @@
         "size": 700580,
         "spawns": [],
         "type": "boss",
-        "ucm": "029B"
+        "ucm": "029B",
+        "enmp": 91
     },
     "Emerald Blues NM": {
         "aiparam": "",
@@ -608,7 +655,8 @@
         "size": 109420,
         "spawns": [],
         "type": "extra",
-        "ucm": "072A"
+        "ucm": "072A",
+        "enmp": 1
     },
     "Fat Bandit": {
         "aiparam": "",
@@ -618,7 +666,8 @@
         "size": 551572,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0001"
+        "ucm": "0001",
+        "enmp": 53
     },
     "Fiery Globe": {
         "aiparam": "",
@@ -628,7 +677,8 @@
         "size": 122640,
         "spawns": [],
         "type": "enemy",
-        "ucm": "004C"
+        "ucm": "004C",
+        "enmp": 5
     },
     "Fiery Globe Treasure Room": {
         "aiparam": "",
@@ -638,7 +688,8 @@
         "size": 732000,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0686"
+        "ucm": "0686",
+        "enmp": 5
     },
     "Fiery Globe Volcano Lord": {
         "aiparam": "",
@@ -648,7 +699,8 @@
         "size": 180522,
         "spawns": [],
         "type": "extra",
-        "ucm": "0689"
+        "ucm": "0689",
+        "enmp": 5
     },
     "Final Xemnas": {
         "aiparam": "",
@@ -658,7 +710,8 @@
         "size": 4536360,
         "spawns": [],
         "type": "boss",
-        "ucm": "081F"
+        "ucm": "081F",
+        "enmp": 90
     },
     "Fire Attack": {
         "aiparam": "",
@@ -678,7 +731,8 @@
         "size": 632600,
         "spawns": [],
         "type": "enemy",
-        "ucm": "000B"
+        "ucm": "000B",
+        "enmp": 62
     },
     "Gambler": {
         "aiparam": "",
@@ -688,7 +742,8 @@
         "size": 1672788,
         "spawns": [],
         "type": "enemy",
-        "ucm": "013A"
+        "ucm": "013A",
+        "enmp": 50
     },
     "Gargoyle Knight": {
         "aiparam": "",
@@ -698,7 +753,8 @@
         "size": 78392,
         "spawns": [],
         "type": "enemy",
-        "ucm": "006F"
+        "ucm": "006F",
+        "enmp": 27
     },
     "Gargoyle Warrior": {
         "aiparam": "",
@@ -708,7 +764,8 @@
         "size": 79594,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0070"
+        "ucm": "0070",
+        "enmp": 28
     },
     "Giant Sark": {
         "aiparam": "",
@@ -718,7 +775,8 @@
         "size": 933824,
         "spawns": [],
         "type": "boss",
-        "ucm": "03C4"
+        "ucm": "03C4",
+        "enmp": 114
     },
     "Graveyard NM": {
         "aiparam": "",
@@ -728,7 +786,8 @@
         "size": 616628,
         "spawns": [],
         "type": "enemy",
-        "ucm": "06EF"
+        "ucm": "06EF",
+        "enmp": 149
     },
     "Grey Triangle Dummy": {
         "aiparam": "",
@@ -750,7 +809,8 @@
         "size": 1499488,
         "spawns": [],
         "type": "boss",
-        "ucm": "0607"
+        "ucm": "0607",
+        "enmp": 154
     },
     "Grim Reaper II": {
         "aiparam": "",
@@ -760,7 +820,8 @@
         "size": 1499488,
         "spawns": [],
         "type": "boss",
-        "ucm": "0607"
+        "ucm": "0607",
+        "enmp": 124
     },
     "Groundshaker": {
         "aiparam": "",
@@ -772,7 +833,8 @@
             "075C"
         ],
         "type": "boss",
-        "ucm": "0459"
+        "ucm": "0459",
+        "enmp": 95
     },
     "Hades Cups": {
         "aiparam": "",
@@ -782,7 +844,8 @@
         "size": 2347708,
         "spawns": [],
         "type": "boss",
-        "ucm": "090E"
+        "ucm": "090E",
+        "enmp": 177
     },
     "Hades Escape": {
         "aiparam": "",
@@ -792,7 +855,8 @@
         "size": 1422564,
         "spawns": [],
         "type": "boss",
-        "ucm": "0812"
+        "ucm": "0812",
+        "enmp": 18
     },
     "Hades I": {
         "aiparam": "",
@@ -802,7 +866,8 @@
         "size": 929856,
         "spawns": [],
         "type": "boss",
-        "ucm": "015D"
+        "ucm": "015D",
+        "enmp": 18
     },
     "Hades II": {
         "aiparam": "",
@@ -812,7 +877,8 @@
         "size": 2351052,
         "spawns": [],
         "type": "boss",
-        "ucm": "015E"
+        "ucm": "015E",
+        "enmp": 18
     },
     "Hammer Frame WI": {
         "aiparam": "",
@@ -822,7 +888,8 @@
         "size": 535724,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0726"
+        "ucm": "0726",
+        "enmp": 59
     },
     "Hayner": {
         "aiparam": "",
@@ -832,7 +899,8 @@
         "size": 791734,
         "spawns": [],
         "type": "boss",
-        "ucm": "04D7"
+        "ucm": "04D7",
+        "enmp": 150
     },
     "Hercules": {
         "aiparam": "",
@@ -842,7 +910,8 @@
         "size": 2280296,
         "spawns": [],
         "type": "boss",
-        "ucm": "0910"
+        "ucm": "0910",
+        "enmp": 178
     },
     "Hook Bat": {
         "aiparam": "",
@@ -872,7 +941,8 @@
         "size": 1276992,
         "spawns": [],
         "type": "boss",
-        "ucm": "04B8"
+        "ucm": "04B8",
+        "enmp": 106
     },
     "Hot Rod WI": {
         "aiparam": "",
@@ -882,7 +952,8 @@
         "size": 871428,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0727"
+        "ucm": "0727",
+        "enmp": 64
     },
     "Hydra": {
         "aiparam": "",
@@ -892,7 +963,8 @@
         "size": 2417732,
         "spawns": [],
         "type": "boss",
-        "ucm": "0160"
+        "ucm": "0160",
+        "enmp": 20
     },
     "Icy Cube": {
         "aiparam": "",
@@ -902,7 +974,8 @@
         "size": 189784,
         "spawns": [],
         "type": "enemy",
-        "ucm": "004D"
+        "ucm": "004D",
+        "enmp": 6
     },
     "Icy Cube Treasure Room": {
         "aiparam": "",
@@ -912,7 +985,8 @@
         "size": 872152,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0687"
+        "ucm": "0687",
+        "enmp": 6
     },
     "Illuminator": {
         "aiparam": "",
@@ -922,7 +996,8 @@
         "size": 258308,
         "spawns": [],
         "type": "boss",
-        "ucm": "0166"
+        "ucm": "0166",
+        "enmp": 98
     },
     "Invisible Target": {
         "aiparam": "",
@@ -942,7 +1017,8 @@
         "size": 537416,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0965"
+        "ucm": "0965",
+        "enmp": 232
     },
     "Jafar": {
         "aiparam": "",
@@ -956,7 +1032,8 @@
             "0642"
         ],
         "type": "boss",
-        "ucm": "015C"
+        "ucm": "015C",
+        "enmp": 138
     },
     "Jafar Flying Wreckage": {
         "aiparam": "",
@@ -976,7 +1053,8 @@
         "size": 754672,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0011"
+        "ucm": "0011",
+        "enmp": 67
     },
     "Lance Warrior": {
         "aiparam": "",
@@ -986,7 +1064,8 @@
         "size": 755608,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0969"
+        "ucm": "0969",
+        "enmp": 233
     },
     "Large Body": {
         "aiparam": "",
@@ -996,7 +1075,8 @@
         "size": 961136,
         "spawns": [],
         "type": "enemy",
-        "ucm": "012F"
+        "ucm": "012F",
+        "enmp": 35
     },
     "Larxene": {
         "aiparam": "",
@@ -1006,7 +1086,8 @@
         "size": 4443212,
         "spawns": [],
         "type": "boss",
-        "ucm": "0962"
+        "ucm": "0962",
+        "enmp": 216
     },
     "Leon": {
         "aiparam": "1",
@@ -1016,7 +1097,8 @@
         "size": 1278612,
         "spawns": [],
         "type": "boss",
-        "ucm": "08F8"
+        "ucm": "08F8",
+        "enmp": 180
     },
     "Lexaeus": {
         "aiparam": "",
@@ -1026,7 +1108,8 @@
         "size": 2359752,
         "spawns": [],
         "type": "boss",
-        "ucm": "0935"
+        "ucm": "0935",
+        "enmp": 214
     },
     "Lingering Will's Ultima Cannon Shot": {
         "aiparam": "",
@@ -1046,7 +1129,8 @@
         "size": 1417332,
         "spawns": [],
         "type": "enemy",
-        "ucm": "000F"
+        "ucm": "000F",
+        "enmp": 7
     },
     "Lock": {
         "aiparam": "",
@@ -1056,7 +1140,8 @@
         "size": 599504,
         "spawns": [],
         "type": "boss",
-        "ucm": "007F"
+        "ucm": "007F",
+        "enmp": 15
     },
     "Lock Dummy": {
         "aiparam": "",
@@ -1076,7 +1161,8 @@
         "size": 1436676,
         "spawns": [],
         "type": "enemy",
-        "ucm": "000C"
+        "ucm": "000C",
+        "enmp": 63
     },
     "Luxord": {
         "aiparam": "",
@@ -1090,7 +1176,8 @@
             "0602"
         ],
         "type": "boss",
-        "ucm": "05F8"
+        "ucm": "05F8",
+        "enmp": 89
     },
     "Luxord's Card": {
         "aiparam": "",
@@ -1110,7 +1197,8 @@
         "size": 871788,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0966"
+        "ucm": "0966",
+        "enmp": 235
     },
     "Magic Phantom": {
         "aiparam": "",
@@ -1120,7 +1208,8 @@
         "size": 1020616,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0963"
+        "ucm": "0963",
+        "enmp": 231
     },
     "Magnum Loader": {
         "aiparam": "",
@@ -1130,7 +1219,8 @@
         "size": 382620,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0079"
+        "ucm": "0079",
+        "enmp": 10
     },
     "Marluxia": {
         "aiparam": "",
@@ -1140,7 +1230,8 @@
         "size": 3252168,
         "spawns": [],
         "type": "boss",
-        "ucm": "0923"
+        "ucm": "0923",
+        "enmp": 215
     },
     "Minute Bomb": {
         "aiparam": "",
@@ -1150,7 +1241,8 @@
         "size": 400712,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0007"
+        "ucm": "0007",
+        "enmp": 58
     },
     "Minute Bomb WI": {
         "aiparam": "",
@@ -1160,7 +1252,8 @@
         "size": 400712,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0725"
+        "ucm": "0725",
+        "enmp": 58
     },
     "Morning Star": {
         "aiparam": "",
@@ -1170,7 +1263,8 @@
         "size": 990288,
         "spawns": [],
         "type": "enemy",
-        "ucm": "007A"
+        "ucm": "007A",
+        "enmp": 11
     },
     "Necromancer": {
         "aiparam": "",
@@ -1180,7 +1274,8 @@
         "size": 698584,
         "spawns": [],
         "type": "enemy",
-        "ucm": "096B"
+        "ucm": "096B",
+        "enmp": 234
     },
     "Nightwalker": {
         "aiparam": "",
@@ -1190,7 +1285,8 @@
         "size": 602620,
         "spawns": [],
         "type": "enemy",
-        "ucm": "000A"
+        "ucm": "000A",
+        "enmp": 61
     },
     "No. 11": {
         "aiparam": "",
@@ -1264,7 +1360,8 @@
             "03BD"
         ],
         "type": "boss",
-        "ucm": "007E"
+        "ucm": "007E",
+        "enmp": 75
     },
     "Oogie Box Dummy": {
         "aiparam": "",
@@ -1307,7 +1404,8 @@
         "size": 896764,
         "spawns": [],
         "type": "boss",
-        "ucm": "0647"
+        "ucm": "0647",
+        "enmp": 113
     },
     "Pete Cups": {
         "aiparam": "",
@@ -1317,7 +1415,8 @@
         "size": 1022460,
         "spawns": [],
         "type": "boss",
-        "ucm": "090F"
+        "ucm": "090F",
+        "enmp": 179
     },
     "Pete OC I": {
         "aiparam": "",
@@ -1327,7 +1426,8 @@
         "size": 1022804,
         "spawns": [],
         "type": "boss",
-        "ucm": "06BB"
+        "ucm": "06BB",
+        "enmp": 26
     },
     "Pete OC II": {
         "aiparam": "",
@@ -1337,7 +1437,8 @@
         "size": 1022968,
         "spawns": [],
         "type": "boss",
-        "ucm": "06BC"
+        "ucm": "06BC",
+        "enmp": 26
     },
     "Pete TR": {
         "aiparam": "",
@@ -1361,7 +1462,8 @@
             "03E2"
         ],
         "type": "boss",
-        "ucm": "05CE"
+        "ucm": "05CE",
+        "enmp": 119
     },
     "Rapid Thruster": {
         "aiparam": "",
@@ -1371,7 +1473,8 @@
         "size": 251012,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0130"
+        "ucm": "0130",
+        "enmp": 38
     },
     "Rapid Thruster AL": {
         "aiparam": "",
@@ -1381,7 +1484,8 @@
         "size": 73460,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0761"
+        "ucm": "0761",
+        "enmp": 38
     },
     "Rapid Thruster WI": {
         "aiparam": "",
@@ -1391,7 +1495,8 @@
         "size": 1020248,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0733"
+        "ucm": "0733",
+        "enmp": 38
     },
     "Riku": {
         "aiparam": "",
@@ -1401,7 +1506,8 @@
         "size": 755026,
         "spawns": [],
         "type": "boss",
-        "ucm": "063C"
+        "ucm": "063C",
+        "enmp": 130
     },
     "Roxas": {
         "aiparam": "",
@@ -1414,7 +1520,8 @@
             "0953"
         ],
         "type": "boss",
-        "ucm": "0951"
+        "ucm": "0951",
+        "enmp": 213
     },
     "Roxas Oathkeeper Keyblade": {
         "aiparam": "",
@@ -1444,7 +1551,8 @@
         "size": 352940,
         "spawns": [],
         "type": "enemy",
-        "ucm": "096E"
+        "ucm": "096E",
+        "enmp": 230
     },
     "Saix": {
         "aiparam": "",
@@ -1456,7 +1564,8 @@
             "06FA"
         ],
         "type": "boss",
-        "ucm": "06C9"
+        "ucm": "06C9",
+        "enmp": 134
     },
     "Saix's Claymore": {
         "aiparam": "",
@@ -1476,7 +1585,8 @@
         "size": 791312,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0136"
+        "ucm": "0136",
+        "enmp": 46
     },
     "Sark": {
         "aiparam": "",
@@ -1486,7 +1596,8 @@
         "size": 956092,
         "spawns": [],
         "type": "boss",
-        "ucm": "035E"
+        "ucm": "035E",
+        "enmp": 100
     },
     "Scar": {
         "aiparam": "",
@@ -1496,7 +1607,8 @@
         "size": 1196392,
         "spawns": [],
         "type": "boss",
-        "ucm": "029C"
+        "ucm": "029C",
+        "enmp": 94
     },
     "Seifer": {
         "aiparam": "",
@@ -1506,7 +1618,8 @@
         "size": 939680,
         "spawns": [],
         "type": "boss",
-        "ucm": "0678"
+        "ucm": "0678",
+        "enmp": 135
     },
     "Sephiroth": {
         "aiparam": "",
@@ -1518,7 +1631,8 @@
             "0912"
         ],
         "type": "boss",
-        "ucm": "08B6"
+        "ucm": "08B6",
+        "enmp": 140
     },
     "Setzer": {
         "aiparam": "",
@@ -1528,7 +1642,8 @@
         "size": 1330656,
         "spawns": [],
         "type": "boss",
-        "ucm": "082F"
+        "ucm": "082F",
+        "enmp": 158
     },
     "Shadow": {
         "aiparam": "",
@@ -1538,7 +1653,8 @@
         "size": 477686,
         "spawns": [],
         "type": "enemy",
-        "ucm": "012E"
+        "ucm": "012E",
+        "enmp": 34
     },
     "Shadow NM": {
         "aiparam": "",
@@ -1548,7 +1664,8 @@
         "size": 4213606,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0731"
+        "ucm": "0731",
+        "enmp": 34
     },
     "Shadow Stalker": {
         "aiparam": "",
@@ -1558,7 +1675,8 @@
         "size": 887908,
         "spawns": [],
         "type": "boss",
-        "ucm": "0163"
+        "ucm": "0163",
+        "enmp": 23
     },
     "Shadow WI": {
         "aiparam": "",
@@ -1568,7 +1686,8 @@
         "size": 477686,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0730"
+        "ucm": "0730",
+        "enmp": 34
     },
     "Shan-Yu": {
         "aiparam": "",
@@ -1578,7 +1697,8 @@
         "size": 2631800,
         "spawns": [],
         "type": "boss",
-        "ucm": "0015"
+        "ucm": "0015",
+        "enmp": 71
     },
     "Shenzie": {
         "aiparam": "",
@@ -1588,7 +1708,8 @@
         "size": 799588,
         "spawns": [],
         "type": "boss",
-        "ucm": "0299"
+        "ucm": "0299",
+        "enmp": 91
     },
     "Shock": {
         "aiparam": "",
@@ -1598,7 +1719,8 @@
         "size": 977672,
         "spawns": [],
         "type": "boss",
-        "ucm": "0080"
+        "ucm": "0080",
+        "enmp": 16
     },
     "Shock Dummy": {
         "aiparam": "",
@@ -1628,7 +1750,8 @@
         "size": 547096,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0137"
+        "ucm": "0137",
+        "enmp": 47
     },
     "Soldier": {
         "aiparam": "",
@@ -1638,7 +1761,8 @@
         "size": 787284,
         "spawns": [],
         "type": "enemy",
-        "ucm": "012D"
+        "ucm": "012D",
+        "enmp": 33
     },
     "Soldier NM": {
         "aiparam": "",
@@ -1648,7 +1772,8 @@
         "size": 787284,
         "spawns": [],
         "type": "enemy",
-        "ucm": "072E"
+        "ucm": "072E",
+        "enmp": 33
     },
     "Sorcerer": {
         "aiparam": "",
@@ -1660,7 +1785,8 @@
             "013B"
         ],
         "type": "enemy",
-        "ucm": "013C"
+        "ucm": "013C",
+        "enmp": 51
     },
     "Sorcerer Doesnt Attack": {
         "aiparam": "",
@@ -1680,7 +1806,8 @@
         "size": 186364,
         "spawns": [],
         "type": "enemy",
-        "ucm": "096C"
+        "ucm": "096C",
+        "enmp": 229
     },
     "Storm Rider": {
         "aiparam": "",
@@ -1690,7 +1817,8 @@
         "size": 2006116,
         "spawns": [],
         "type": "boss",
-        "ucm": "0165"
+        "ucm": "0165",
+        "enmp": 25
     },
     "Strafer": {
         "aiparam": "",
@@ -1700,7 +1828,8 @@
         "size": 363704,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0753"
+        "ucm": "0753",
+        "enmp": 101
     },
     "Surveillance Robot": {
         "aiparam": "",
@@ -1710,7 +1839,8 @@
         "size": 369292,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0132"
+        "ucm": "0132",
+        "enmp": 37
     },
     "Terra": {
         "aiparam": "",
@@ -1722,7 +1852,8 @@
             "09FD"
         ],
         "type": "boss",
-        "ucm": "096F"
+        "ucm": "096F",
+        "enmp": 244
     },
     "The Beast": {
         "aiparam": "",
@@ -1732,7 +1863,8 @@
         "size": 1657608,
         "spawns": [],
         "type": "boss",
-        "ucm": "02CE"
+        "ucm": "02CE",
+        "enmp": 73
     },
     "The Experiment": {
         "aiparam": "",
@@ -1746,7 +1878,8 @@
             "0712"
         ],
         "type": "boss",
-        "ucm": "05D0"
+        "ucm": "05D0",
+        "enmp": 120
     },
     "The Experiment Head": {
         "aiparam": "",
@@ -1786,7 +1919,8 @@
         "size": 1426680,
         "spawns": [],
         "type": "boss",
-        "ucm": "0161"
+        "ucm": "0161",
+        "enmp": 74
     },
     "Tifa": {
         "aiparam": "1",
@@ -1796,7 +1930,8 @@
         "size": 1053854,
         "spawns": [],
         "type": "boss",
-        "ucm": "08FA"
+        "ucm": "08FA",
+        "enmp": 182
     },
     "Tiny Pyramid Dummy": {
         "aiparam": "",
@@ -1816,7 +1951,8 @@
         "size": 673368,
         "spawns": [],
         "type": "enemy",
-        "ucm": "007B"
+        "ucm": "007B",
+        "enmp": 12
     },
     "Toy Soldier NM": {
         "aiparam": "",
@@ -1848,7 +1984,8 @@
             "0361"
         ],
         "type": "boss",
-        "ucm": "0133"
+        "ucm": "0133",
+        "enmp": 86
     },
     "Vexen": {
         "aiparam": "",
@@ -1860,7 +1997,8 @@
             "0934"
         ],
         "type": "boss",
-        "ucm": "0933"
+        "ucm": "0933",
+        "enmp": 200
     },
     "Vivi": {
         "aiparam": "",
@@ -1870,7 +2008,8 @@
         "size": 882418,
         "spawns": [],
         "type": "boss",
-        "ucm": "086C"
+        "ucm": "086C",
+        "enmp": 157
     },
     "Volcano Lord": {
         "aiparam": "",
@@ -1883,7 +2022,8 @@
             "07FB"
         ],
         "type": "boss",
-        "ucm": "040B"
+        "ucm": "040B",
+        "enmp": 197
     },
     "Wight Knight NM": {
         "aiparam": "",
@@ -1893,7 +2033,8 @@
         "size": 554888,
         "spawns": [],
         "type": "enemy",
-        "ucm": "0077"
+        "ucm": "0077",
+        "enmp": 8
     },
     "Xaldin": {
         "aiparam": "",
@@ -1903,7 +2044,8 @@
         "size": 2741336,
         "spawns": [],
         "type": "boss",
-        "ucm": "03E5"
+        "ucm": "03E5",
+        "enmp": 87
     },
     "Xemnas": {
         "aiparam": "",
@@ -1913,7 +2055,8 @@
         "size": 2607408,
         "spawns": [],
         "type": "boss",
-        "ucm": "0646"
+        "ucm": "0646",
+        "enmp": 90
     },
     "Xigbar": {
         "aiparam": "",
@@ -1923,7 +2066,8 @@
         "size": 2061008,
         "spawns": [],
         "type": "boss",
-        "ucm": "0622"
+        "ucm": "0622",
+        "enmp": 133
     },
     "Yuffie": {
         "aiparam": "1",
@@ -1933,7 +2077,8 @@
         "size": 755432,
         "spawns": [],
         "type": "boss",
-        "ucm": "08FB"
+        "ucm": "08FB",
+        "enmp": 183
     },
     "Zexion": {
         "aiparam": "",
@@ -1946,7 +2091,8 @@
             "097E"
         ],
         "type": "boss",
-        "ucm": "097B"
+        "ucm": "097B",
+        "enmp": 217
     },
     "Zexions Book": {
         "aiparam": "",
@@ -1956,7 +2102,8 @@
         "size": 102818,
         "spawns": [],
         "type": "extra",
-        "ucm": "097D"
+        "ucm": "097D",
+        "enmp": 217
     },
     "Zexions Something": {
         "aiparam": "",
