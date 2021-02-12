@@ -3,22 +3,22 @@ import json, yaml, sys
 
 CAMERA_START_OFFSET = 0x1C
 ENMP_START_OFFSET = 0x1d119ac
-ENMP_HP_OFFSET = 0x1
-ENMP_ENTRY_LENGTH = 0x5B
-print(ENMP_START_OFFSET)
+ENMP_HP_OFFSET = 0x4
+ENMP_HEADER_LENGTH = 0x8
+ENMP_ENTRY_LENGTH = 0x5C
 class SpawnReplacer:
-    def __init__(self, joker=True, debug=False, version="xeemo"):
+    def __init__(self, useCond=True, debug=False, version="xeey"):
         self.kh2lib = kh2lib(cheatsfn="F266B00B.pnach")
         self.locations = json.load(open("locations.json"))
         self.enemies = json.load(open("enemies.json"))
         self.debug = debug
-        self.joker = joker
+        self.useCond = useCond
         self.version_offset = self.getVersionOffset(version)
     def getVersionOffset(self, version):
-        # Only matters for mdlx mods
+        # Only matters for mdlx hacks
         if version in ["vanilla", "jp"]:
             return 0
-        if version in ["xeemo"]:
+        if version in ["xeey", "xeeynamo"]:
             return 4096
         if version in ["crazycat"]:
             return 4096
@@ -71,13 +71,10 @@ class SpawnReplacer:
     def replaceLocation(self, location, allow_same_spawn=True):
         disableCamera = "disableCamera" in location and location["disableCamera"]
         scaleHP = "scaleHP" in location and location["scaleHP"]
-        # WORKING ON SCALEHP CHANGE
         location_details = self.lookupLocation(location["description"])
         replacements = []
         comment = "Location: {}".format(location["description"])
         for e in range(len(location["enemies"])):
-            print(location["enemies"][e])
-            print(location_details["enemies"][e])
             new = self.lookupEnemy(location["enemies"][e])
             spawn = location_details["enemies"][e]
             old = self.lookupEnemy(spawn["name"])
@@ -87,8 +84,15 @@ class SpawnReplacer:
             replacement = self.replaceEnemy(new, location, spawn)
             replacements = replacements + replacement
             if scaleHP:
-                address = hex(ENMP_START_OFFSET + (ENMP_ENTRY_LENGTH * old["enmp"]) + ENMP_HP_OFFSET)[2:].zfill(8)
-                value = hex(new["hp"])[2:].zfill(8)
+                address = hex(ENMP_START_OFFSET + ENMP_HEADER_LENGTH + ENMP_HP_OFFSET + (ENMP_ENTRY_LENGTH * new["enmp"]))[2:].zfill(8)
+                # hp gets converted to 2 bytes, where HP=b1+256*b2
+                hp_byte1 = hex(old["hp"] % 256)[2:].zfill(2)
+                hp_byte2 = hex((old["hp"] - int(hp_byte1,16)) // 256).zfill(2)
+                hp = "{}{}".format(hp_byte1, hp_byte2)
+                if "setHP" in location:
+                    hp = hex(location["setHP"])[2:].zfill(4)
+                other_hp_bytes = new["hp_extra_bytes"] if "hp_extra_bytes" in new else '0000'
+                value = "{}{}".format(other_hp_bytes, hp)
                 replacements += ["{} {}".format(address, value)]
         codes = replacements
         if disableCamera:
@@ -101,8 +105,9 @@ class SpawnReplacer:
             codes += ["{} {}".format(offset, value)]
         if "extraCodes" in location and len(location["extraCodes"]) >0:
             codes += location["extraCodes"]
-        if self.joker:
-            codes = self.kh2lib.cheatengine.apply_room_joker(self.kh2lib.cheatengine.apply_event_joker(replacements, location_details["event"]), location_details["world"], location_details["room"])
+        if self.useCond:
+            codes = self.kh2lib.cheatengine.apply_room_cond(self.kh2lib.cheatengine.apply_event_cond(replacements, location_details["event"]),  location_details["room"], location_details["world"])
+            print(codes)
         else:
             codes = replacements
         self.kh2lib.cheatengine.apply_ram_code(codes, comment=comment)
