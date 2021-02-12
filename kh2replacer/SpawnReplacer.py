@@ -2,8 +2,10 @@ from kh2lib.kh2lib import kh2lib
 import json, yaml, sys
 
 CAMERA_START_OFFSET = 0x1C
-ENMP_START_OFFSET = 0x0
-
+ENMP_START_OFFSET = 0x1d119ac
+ENMP_HP_OFFSET = 0x1
+ENMP_ENTRY_LENGTH = 0x5B
+print(ENMP_START_OFFSET)
 class SpawnReplacer:
     def __init__(self, joker=True, debug=False, version="xeemo"):
         self.kh2lib = kh2lib(cheatsfn="F266B00B.pnach")
@@ -13,12 +15,13 @@ class SpawnReplacer:
         self.joker = joker
         self.version_offset = self.getVersionOffset(version)
     def getVersionOffset(self, version):
+        # Only matters for mdlx mods
         if version in ["vanilla", "jp"]:
             return 0
         if version in ["xeemo"]:
-            return 99 # TODO FILL IN WITH REAL NUMBER
+            return 4096
         if version in ["crazycat"]:
-            return 999 # TODO FILL IN WITH REAL NUMBER
+            return 4096
         raise Exception("unknown version")
     def lookupLocation(self, description):
         for loc in self.locations:
@@ -65,7 +68,7 @@ class SpawnReplacer:
         aiparamcode = '{} 000000{}'.format(aiaddr, aiparam)
         codes = [modelcode, aiparamcode]
         return codes
-    def replaceLocation(self, location):
+    def replaceLocation(self, location, allow_same_spawn=True):
         disableCamera = "disableCamera" in location and location["disableCamera"]
         scaleHP = "scaleHP" in location and location["scaleHP"]
         # WORKING ON SCALEHP CHANGE
@@ -73,19 +76,26 @@ class SpawnReplacer:
         replacements = []
         comment = "Location: {}".format(location["description"])
         for e in range(len(location["enemies"])):
+            print(location["enemies"][e])
+            print(location_details["enemies"][e])
             new = self.lookupEnemy(location["enemies"][e])
             spawn = location_details["enemies"][e]
-            if spawn["name"] == new["name"]:
+            old = self.lookupEnemy(spawn["name"])
+            if not allow_same_spawn and spawn["name"] == new["name"]:
                 continue # This spawn is not changing, no code needed
             comment += "\n// Replacing {}) {} with {}".format(e,spawn["name"], new["name"])
             replacement = self.replaceEnemy(new, location, spawn)
             replacements = replacements + replacement
+            if scaleHP:
+                address = hex(ENMP_START_OFFSET + (ENMP_ENTRY_LENGTH * old["enmp"]) + ENMP_HP_OFFSET)[2:].zfill(8)
+                value = hex(new["hp"])[2:].zfill(8)
+                replacements += ["{} {}".format(address, value)]
         codes = replacements
         if disableCamera:
             if not "msn_offset" in location_details:
                 raise Exception("MSN Offset needed") 
             comment += "\n// Disabling intro camera"
-            offset_dec = int(location_details["msn_offset"],16) + self.version_offset + CAMERA_START_OFFSET # Verify this is correct
+            offset_dec = int(location_details["msn_offset"],16) + CAMERA_START_OFFSET
             offset = hex(offset_dec)[2:].upper().zfill(8)
             value = "00000000" # I think this is fine but double check
             codes += ["{} {}".format(offset, value)]

@@ -130,7 +130,8 @@
         ],
         "type": "boss",
         "ucm": "03F7",
-        "enmp": 99
+        "enmp": 99,
+        "hp": 50
     },
     "Barrel": {
         "aiparam": "",
@@ -1405,7 +1406,8 @@
         "spawns": [],
         "type": "boss",
         "ucm": "0647",
-        "enmp": 113
+        "enmp": 113,
+        "hp": 1
     },
     "Pete Cups": {
         "aiparam": "",
@@ -1608,7 +1610,8 @@
         "spawns": [],
         "type": "boss",
         "ucm": "029C",
-        "enmp": 94
+        "enmp": 94,
+        "hp": 9999
     },
     "Seifer": {
         "aiparam": "",
@@ -2056,7 +2059,8 @@
         "spawns": [],
         "type": "boss",
         "ucm": "0646",
-        "enmp": 90
+        "enmp": 90,
+        "hp": 9999
     },
     "Xigbar": {
         "aiparam": "",
