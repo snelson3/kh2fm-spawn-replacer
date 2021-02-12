@@ -1,10 +1,6 @@
-Finish scaling hp stuff
 add fixes code
-test all the new options with two bosses
-find real version offsets
 write scripts to get the msn/ai addresses
-somethings wrong with my conds
-lingering will hp swap needs to be byte for byte good
-restart try
 add teleport cond
 update kh2lib when releasing this
+
+idk where else to put it but the MSN id shows up in the associated ARD, wtry altering that when trying to load other MSNs from other worlds
