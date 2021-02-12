@@ -2,7 +2,7 @@ from kh2lib.kh2lib import kh2lib
 import json, yaml, sys
 
 CAMERA_START_OFFSET = 0x1C
-ENMP_START_OFFSET = 0x1d119ac
+ENMP_START_OFFSET = 0x11d119ac # Technically in the memdump it's found with a 0 in the first digit, but the hp scaling doesn't always work that way
 ENMP_HP_OFFSET = 0x4
 ENMP_HEADER_LENGTH = 0x8
 ENMP_ENTRY_LENGTH = 0x5C
@@ -87,10 +87,11 @@ class SpawnReplacer:
                 address = hex(ENMP_START_OFFSET + ENMP_HEADER_LENGTH + ENMP_HP_OFFSET + (ENMP_ENTRY_LENGTH * new["enmp"]))[2:].zfill(8)
                 # hp gets converted to 2 bytes, where HP=b1+256*b2
                 hp_byte1 = hex(old["hp"] % 256)[2:].zfill(2)
-                hp_byte2 = hex((old["hp"] - int(hp_byte1,16)) // 256).zfill(2)
-                hp = "{}{}".format(hp_byte1, hp_byte2)
+                hp_byte2 = hex((old["hp"] - int(hp_byte1,16)) // 256)[2:].zfill(2)
+                hp = "{}{}".format(hp_byte2, hp_byte1)
                 if "setHP" in location:
                     hp = hex(location["setHP"])[2:].zfill(4)
+                # hp = hex(location["setHP"] if "setHP" in location else new["hp"])[2:].zfill(4)
                 other_hp_bytes = new["hp_extra_bytes"] if "hp_extra_bytes" in new else '0000'
                 value = "{}{}".format(other_hp_bytes, hp)
                 replacements += ["{} {}".format(address, value)]
@@ -107,7 +108,6 @@ class SpawnReplacer:
             codes += location["extraCodes"]
         if self.useCond:
             codes = self.kh2lib.cheatengine.apply_room_cond(self.kh2lib.cheatengine.apply_event_cond(replacements, location_details["event"]),  location_details["room"], location_details["world"])
-            print(codes)
         else:
             codes = replacements
         self.kh2lib.cheatengine.apply_ram_code(codes, comment=comment)
