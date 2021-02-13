@@ -1,6 +1,12 @@
-add fixes code
+make the comments better for fixes (inline comments possible)
 write scripts to get the msn/ai addresses
 add teleport cond
 update kh2lib when releasing this
 
+xemnas crashes when you beat him in petes world, thats a buzzkill
+
 idk where else to put it but the MSN id shows up in the associated ARD, wtry altering that when trying to load other MSNs from other worlds
+    also maybe you could change the world id listed in the ard file
+also look at fixing the collision in xigbars room when other enemies are there
+another option, there's a bunch of alloc opcodes in the ARDs, maybe write up a script to list those in order and compare to my own list of memory usage
+    could end up with a much more fine grained idea of how much memory things take up/how much is available

@@ -1,5 +1,5 @@
 from kh2lib.kh2lib import kh2lib
-import json, yaml, sys
+import json, yaml, sys, os
 
 CAMERA_START_OFFSET = 0x1C
 ENMP_START_OFFSET = 0x11d119ac # Technically in the memdump it's found with a 0 in the first digit, but the hp scaling doesn't always work that way
@@ -38,6 +38,7 @@ class SpawnReplacer:
             "description": description,
             "disableCamera": False,
             "scaleHP": False,
+            "applyFixes": True,
             "enemies": [e['name'] for e in location['enemies'] ]
         }
         yaml.dump(output, open(description.replace("/","_").replace(' ', '_').replace(':', '').lower()+'.yaml', "w"))
@@ -72,6 +73,7 @@ class SpawnReplacer:
         disableCamera = "disableCamera" in location and location["disableCamera"]
         scaleHP = "scaleHP" in location and location["scaleHP"]
         location_details = self.lookupLocation(location["description"])
+        applyFixes = "applyFixes" in location and location["applyFixes"]
         replacements = []
         comment = "Location: {}".format(location["description"])
         for e in range(len(location["enemies"])):
@@ -84,6 +86,7 @@ class SpawnReplacer:
             replacement = self.replaceEnemy(new, location, spawn)
             replacements = replacements + replacement
             if scaleHP:
+                comment += "\n  // Scaling {} HP to match location".format(new["name"])
                 address = hex(ENMP_START_OFFSET + ENMP_HEADER_LENGTH + ENMP_HP_OFFSET + (ENMP_ENTRY_LENGTH * new["enmp"]))[2:].zfill(8)
                 # hp gets converted to 2 bytes, where HP=b1+256*b2
                 hp_byte1 = hex(old["hp"] % 256)[2:].zfill(2)
@@ -95,6 +98,20 @@ class SpawnReplacer:
                 other_hp_bytes = new["hp_extra_bytes"] if "hp_extra_bytes" in new else '0000'
                 value = "{}{}".format(other_hp_bytes, hp)
                 replacements += ["{} {}".format(address, value)]
+            if applyFixes:
+                fixes_dir = os.path.join(__file__, "..","fixes", new["name"].lower().replace(" ", ""))
+                ai_start_offset = int(location_details["mdlx_offset"],16) + self.version_offset + int(new["ai_start_offset"],16) 
+                def _getRealAddress(line):
+                    address, value = line.split(" ")[0], line.split(" ")[1]
+                    address = hex(int(address, 16) + ai_start_offset)[2:].zfill(8)
+                    address = "2" + address[1:]
+                    return "{} {}".format(address, value)
+                if os.path.isdir(fixes_dir):
+                    for fn in os.listdir(fixes_dir):
+                        # Fixes are normal ADDRESS VALUE format but ADDRESS is only the offset from the start of the AI file
+                        fix = [_getRealAddress(l) for l in open(os.path.join(fixes_dir,fn)).read().split("\n") if l]
+                        replacements = replacements + fix
+                        comment += " // {}".format(fn)
         codes = replacements
         if disableCamera:
             if not "msn_offset" in location_details:
