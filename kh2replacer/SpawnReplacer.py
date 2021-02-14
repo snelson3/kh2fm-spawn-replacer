@@ -99,14 +99,14 @@ class SpawnReplacer:
                 value = "{}{}".format(other_hp_bytes, hp)
                 replacements += ["{} {}".format(address, value)]
             if applyFixes:
-                fixes_dir = os.path.join(__file__, "..","fixes", new["name"].lower().replace(" ", ""))
-                ai_start_offset = int(location_details["mdlx_offset"],16) + self.version_offset + int(new["ai_start_offset"],16) 
+                fixes_dir = os.path.join(__file__, "..","fixes", new["name"].lower().replace(" ", "_"))
                 def _getRealAddress(line):
                     address, value = line.split(" ")[0], line.split(" ")[1]
                     address = hex(int(address, 16) + ai_start_offset)[2:].zfill(8)
                     address = "2" + address[1:]
                     return "{} {}".format(address, value)
                 if os.path.isdir(fixes_dir):
+                    ai_start_offset = int(location_details["mdlx_offset"],16) + self.version_offset + int(new["ai_start_offset"],16) 
                     for fn in os.listdir(fixes_dir):
                         # Fixes are normal ADDRESS VALUE format but ADDRESS is only the offset from the start of the AI file
                         fix = [_getRealAddress(l) for l in open(os.path.join(fixes_dir,fn)).read().split("\n") if l]
@@ -119,7 +119,7 @@ class SpawnReplacer:
             comment += "\n// Disabling intro camera"
             offset_dec = int(location_details["msn_offset"],16) + CAMERA_START_OFFSET
             offset = hex(offset_dec)[2:].upper().zfill(8)
-            value = "00000000" # I think this is fine but double check
+            value = "00000002" # I think this is fine but double check
             codes += ["{} {}".format(offset, value)]
         if "extraCodes" in location and len(location["extraCodes"]) >0:
             codes += location["extraCodes"]

@@ -55,7 +55,10 @@
     "type": "boss",
     "ucm": "085C",
     "enmp": 147,
-    "hp": 997
+    "hp": 997,
+    "mdlx_offset": "0x121d840",
+    "ai_start_offset": "0x00075e04",
+    "msn_offset": "0x004fa4a0"
   },
   "Armored Knight": {
     "aiparam": "",
@@ -101,7 +104,10 @@
     "size": 1879368,
     "spawns": [],
     "type": "boss",
-    "ucm": "08B5"
+    "ucm": "08B5",
+    "mdlx_offset": "0x104e140",
+    "ai_start_offset": "0x00080c9c",
+    "msn_offset": "0x004fa4a0"
   },
   "Axel II": {
     "aiparam": "",
@@ -113,7 +119,10 @@
     "type": "boss",
     "ucm": "0051",
     "enmp": 138,
-    "hp": 499
+    "hp": 499,
+    "mdlx_offset": "0xad8140",
+    "ai_start_offset": "0x00080c9c",
+    "msn_offset": "0x004fa4a0"
   },
   "Banzai": {
     "aiparam": "",
@@ -139,7 +148,10 @@
     "type": "boss",
     "ucm": "03F7",
     "enmp": 92,
-    "hp": 1196
+    "hp": 1196,
+    "mdlx_offset": "0x11a1840",
+    "ai_start_offset": "0x000a96ec",
+    "msn_offset": "0x004fa4b0"
   },
   "Barrel": {
     "aiparam": "",
@@ -219,7 +231,10 @@
     "type": "boss",
     "ucm": "040C",
     "enmp": 113,
-    "hp": 797
+    "hp": 797,
+    "mdlx_offset": "0x11a1840",
+    "ai_start_offset": "0x00096d74",
+    "msn_offset": "0x004fa4a0"
   },
   "Bolt Tower": {
     "aiparam": "",
@@ -277,7 +292,10 @@
     "type": "boss",
     "ucm": "015F",
     "enmp": 176,
-    "hp": 1495
+    "hp": 1495,
+    "mdlx_offset": "0xf3bb40",
+    "ai_start_offset": "0x00084f04",
+    "msn_offset": "0x004fa4a0"
   },
   "Cloud": {
     "aiparam": "1",
@@ -289,7 +307,9 @@
     "type": "boss",
     "ucm": "08F9",
     "enmp": 160,
-    "hp": 797
+    "hp": 797,
+    "mdlx_offset": "0x12fc040",
+    "ai_start_offset": "0x0007767c"
   },
   "Creeper": {
     "aiparam": "",
@@ -361,7 +381,10 @@
     "type": "boss",
     "ucm": "0162",
     "enmp": 21,
-    "hp": 997
+    "hp": 997,
+    "mdlx_offset": "0x10c1e40",
+    "ai_start_offset": "0x00064cc4",
+    "msn_offset": "0x004fa4a0"
   },
   "Data Axel": {
     "aiparam": "",
@@ -373,7 +396,10 @@
     "type": "boss",
     "ucm": "09C4",
     "enmp": 221,
-    "hp": 1871
+    "hp": 1871,
+    "mdlx_offset": "0xc04e40",
+    "ai_start_offset": "0x00080c9c",
+    "msn_offset": "0x004fa4a0"
   },
   "Data Demyx": {
     "aiparam": "",
@@ -387,7 +413,10 @@
     "type": "boss",
     "ucm": "09CC",
     "enmp": 216,
-    "hp": 1495
+    "hp": 1495,
+    "mdlx_offset": "0x10e4040",
+    "ai_start_offset": "0x0006643c",
+    "msn_offset": "0x004fa4f0"
   },
   "Data Demyx Water Clone": {
     "aiparam": "",
@@ -409,7 +438,10 @@
     "type": "boss",
     "ucm": "09CA",
     "enmp": 215,
-    "hp": 1871
+    "hp": 1871,
+    "mdlx_offset": "0xeaf340",
+    "ai_start_offset": "0x0008d83c",
+    "msn_offset": "0x004fa4b0"
   },
   "Data Larxene": {
     "aiparam": "1",
@@ -421,7 +453,10 @@
     "type": "boss",
     "ucm": "0962",
     "enmp": 192,
-    "hp": 1495
+    "hp": 1495,
+    "mdlx_offset": "0xe94040",
+    "ai_start_offset": "0x0007688c",
+    "msn_offset": "0x004fa4a0"
   },
   "Data Lexaeus": {
     "aiparam": "1",
@@ -449,7 +484,10 @@
     "type": "boss",
     "ucm": "09C8",
     "enmp": 219,
-    "hp": 1495
+    "hp": 1495,
+    "mdlx_offset": "0xd1a640",
+    "ai_start_offset": "0x00050f1c",
+    "msn_offset": "0x004fa510"
   },
   "Data Marluxia": {
     "aiparam": "1",
@@ -461,7 +499,10 @@
     "type": "boss",
     "ucm": "0923",
     "enmp": 191,
-    "hp": 1871
+    "hp": 1871,
+    "mdlx_offset": "0xe3c840",
+    "ai_start_offset": "0x000889dc",
+    "msn_offset": "0x004fa4a0"
   },
   "Data Roxas": {
     "aiparam": "1",
@@ -476,7 +517,10 @@
     "type": "boss",
     "ucm": "0951",
     "enmp": 218,
-    "hp": 1744
+    "hp": 1744,
+    "mdlx_offset": "0xbf4640",
+    "ai_start_offset": "0x00045004",
+    "msn_offset": "0x004fa4a0"
   },
   "Data Saix": {
     "aiparam": "",
@@ -490,7 +534,10 @@
     "type": "boss",
     "ucm": "09C6",
     "enmp": 228,
-    "hp": 1871
+    "hp": 1871,
+    "mdlx_offset": "0x1091840",
+    "ai_start_offset": "0x000914ac",
+    "msn_offset": "0x004fa4c0"
   },
   "Data Saix Claymore": {
     "aiparam": "",
@@ -515,7 +562,10 @@
     "ucm": "0933",
     "enmp": 177,
     "hp": 1495,
-    "hp_extra_bytes": "0064"
+    "hp_extra_bytes": "0064",
+    "mdlx_offset": "0xf35840",
+    "ai_start_offset": "0x0007f34c",
+    "msn_offset": "0x004fa4e0"
   },
   "Data Xaldin": {
     "aiparam": "",
@@ -527,7 +577,10 @@
     "type": "boss",
     "ucm": "09CB",
     "enmp": 222,
-    "hp": 1871
+    "hp": 1871,
+    "mdlx_offset": "0x10bde40",
+    "ai_start_offset": "0x000733bc",
+    "msn_offset": "0x004fa4a0"
   },
   "Data Xemnas": {
     "aiparam": "",
@@ -539,7 +592,10 @@
     "type": "boss",
     "ucm": "09C9",
     "enmp": 215,
-    "hp": 1871
+    "hp": 1871,
+    "mdlx_offset": "0xc49e40",
+    "ai_start_offset": "0x0006a33c",
+    "msn_offset": "0x004fa4a0"
   },
   "Data Xigbar": {
     "aiparam": "",
@@ -551,7 +607,10 @@
     "type": "boss",
     "ucm": "09C5",
     "enmp": 227,
-    "hp": 1594
+    "hp": 1594,
+    "mdlx_offset": "0x115e840",
+    "ai_start_offset": "0x0007aebc",
+    "msn_offset": "0x004fa4a0"
   },
   "Data Zexion": {
     "aiparam": "1",
@@ -563,7 +622,10 @@
     "type": "boss",
     "ucm": "097B",
     "enmp": 193,
-    "hp": 1196
+    "hp": 1196,
+    "mdlx_offset": "0xf62040",
+    "ai_start_offset": "0x0008557c",
+    "msn_offset": "0x004fa4a0"
   },
   "Demyx": {
     "aiparam": "",
@@ -577,7 +639,10 @@
     "type": "boss",
     "ucm": "08F7",
     "enmp": 83,
-    "hp": 1495
+    "hp": 1495,
+    "mdlx_offset": "0x10e4040",
+    "ai_start_offset": "0x0006643c",
+    "msn_offset": "0x004fa4f0"
   },
   "Demyx OC": {
     "aiparam": "",
@@ -589,7 +654,10 @@
       "04A0"
     ],
     "type": "boss",
-    "ucm": "031B"
+    "ucm": "031B",
+    "mdlx_offset": "0xf56840",
+    "ai_start_offset": "0x0006643c",
+    "msn_offset": "0x004fa4f0"
   },
   "Demyx's Water Clone": {
     "aiparam": "",
@@ -763,7 +831,10 @@
     "type": "boss",
     "ucm": "081F",
     "enmp": 85,
-    "hp": 1495
+    "hp": 1495,
+    "mdlx_offset": "0xeaf340",
+    "ai_start_offset": "0x0008d83c",
+    "msn_offset": "0x004fa4b0"
   },
   "Fire Attack": {
     "aiparam": "",
@@ -834,7 +905,10 @@
     "ucm": "03C4",
     "enmp": 107,
     "hp": 250,
-    "hp_extra_bytes": "0032"
+    "hp_extra_bytes": "0032",
+    "mdlx_offset": "0x10ef540",
+    "ai_start_offset": "0x0008cfdc",
+    "msn_offset": "0x004fa4a0"
   },
   "Graveyard NM": {
     "aiparam": "",
@@ -870,7 +944,10 @@
     "type": "boss",
     "ucm": "0607",
     "enmp": 143,
-    "hp": 997
+    "hp": 997,
+    "mdlx_offset": "0x11f4840",
+    "ai_start_offset": "0x000de444",
+    "msn_offset": "0x004fa4a0"
   },
   "Grim Reaper II": {
     "aiparam": "",
@@ -882,7 +959,10 @@
     "type": "boss",
     "ucm": "0607",
     "enmp": 114,
-    "hp": 997
+    "hp": 997,
+    "mdlx_offset": "0x1237840",
+    "ai_start_offset": "0x000de444",
+    "msn_offset": "0x004fa500"
   },
   "Groundshaker": {
     "aiparam": "",
@@ -896,7 +976,10 @@
     "type": "boss",
     "ucm": "0459",
     "enmp": 90,
-    "hp": 1594
+    "hp": 1594,
+    "mdlx_offset": "0xd0acc0",
+    "ai_start_offset": "0x00225ec4",
+    "msn_offset": "0x004fa4a0"
   },
   "Hades Cups": {
     "aiparam": "",
@@ -920,7 +1003,10 @@
     "type": "boss",
     "ucm": "0812",
     "enmp": 18,
-    "hp": 1495
+    "hp": 1495,
+    "mdlx_offset": "0x102c840",
+    "ai_start_offset": "0x000df0e0",
+    "msn_offset": "0x004fa490"
   },
   "Hades I": {
     "aiparam": "",
@@ -932,7 +1018,10 @@
     "type": "boss",
     "ucm": "015D",
     "enmp": 18,
-    "hp": 1495
+    "hp": 1495,
+    "mdlx_offset": "0x10b3840",
+    "ai_start_offset": "0x000df0e0",
+    "msn_offset": "0x004fa490"
   },
   "Hades II": {
     "aiparam": "",
@@ -944,7 +1033,10 @@
     "type": "boss",
     "ucm": "015E",
     "enmp": 18,
-    "hp": 1495
+    "hp": 1495,
+    "mdlx_offset": "0x1240040",
+    "ai_start_offset": "0x000df0e0",
+    "msn_offset": "0x004fa4a0"
   },
   "Hammer Frame WI": {
     "aiparam": "",
@@ -968,7 +1060,10 @@
     "type": "boss",
     "ucm": "04D7",
     "enmp": 140,
-    "hp": 997
+    "hp": 997,
+    "mdlx_offset": "0x12df140",
+    "ai_start_offset": "0x00065ebc",
+    "msn_offset": "0x004fa590"
   },
   "Hercules": {
     "aiparam": "",
@@ -980,7 +1075,9 @@
     "type": "boss",
     "ucm": "0910",
     "enmp": 157,
-    "hp": 1495
+    "hp": 1495,
+    "mdlx_offset": "0xd2be40",
+    "ai_start_offset": "0x000e84e0"
   },
   "Hook Bat": {
     "aiparam": "",
@@ -1012,7 +1109,10 @@
     "type": "boss",
     "ucm": "04B8",
     "enmp": 99,
-    "hp": 1495
+    "hp": 1495,
+    "mdlx_offset": "0xff6d40",
+    "ai_start_offset": "0x000d3f04",
+    "msn_offset": "0x004fa4c0"
   },
   "Hot Rod WI": {
     "aiparam": "",
@@ -1036,7 +1136,10 @@
     "type": "boss",
     "ucm": "0160",
     "enmp": 20,
-    "hp": 1046
+    "hp": 1046,
+    "mdlx_offset": "0x1224040",
+    "ai_start_offset": "0x000fdf6c",
+    "msn_offset": "0x004fa4a0"
   },
   "Icy Cube": {
     "aiparam": "",
@@ -1111,7 +1214,10 @@
     "ucm": "015C",
     "enmp": 128,
     "hp": 997,
-    "hp_extra_bytes": "006e"
+    "hp_extra_bytes": "006e",
+    "mdlx_offset": "0x10fb640",
+    "ai_start_offset": "0x0006a6bc",
+    "msn_offset": "0x004fa4a0"
   },
   "Jafar Flying Wreckage": {
     "aiparam": "",
@@ -1169,7 +1275,10 @@
     "type": "boss",
     "ucm": "0962",
     "enmp": 192,
-    "hp": 1495
+    "hp": 1495,
+    "mdlx_offset": "0xe94040",
+    "ai_start_offset": "0x0007688c",
+    "msn_offset": "0x004fa4a0"
   },
   "Leon": {
     "aiparam": "1",
@@ -1181,7 +1290,9 @@
     "type": "boss",
     "ucm": "08F8",
     "enmp": 159,
-    "hp": 698
+    "hp": 698,
+    "mdlx_offset": "0x127c840",
+    "ai_start_offset": "0x0007fc2c"
   },
   "Lexaeus": {
     "aiparam": "",
@@ -1193,7 +1304,10 @@
     "type": "boss",
     "ucm": "0935",
     "enmp": 190,
-    "hp": 1871
+    "hp": 1871,
+    "mdlx_offset": "0xea3040",
+    "ai_start_offset": "0x000801bc",
+    "msn_offset": "0x004fa4e0"
   },
   "Lingering Will's Ultima Cannon Shot": {
     "aiparam": "",
@@ -1265,7 +1379,10 @@
     "type": "boss",
     "ucm": "05F8",
     "enmp": 84,
-    "hp": 1495
+    "hp": 1495,
+    "mdlx_offset": "0xd1a640",
+    "ai_start_offset": "0x00050f1c",
+    "msn_offset": "0x004fa510"
   },
   "Luxord's Card": {
     "aiparam": "",
@@ -1323,7 +1440,10 @@
     "type": "boss",
     "ucm": "0923",
     "enmp": 191,
-    "hp": 1871
+    "hp": 1871,
+    "mdlx_offset": "0xe3c840",
+    "ai_start_offset": "0x000889dc",
+    "msn_offset": "0x004fa4a0"
   },
   "Minute Bomb": {
     "aiparam": "",
@@ -1459,7 +1579,10 @@
     "type": "boss",
     "ucm": "007E",
     "enmp": 74,
-    "hp": 648
+    "hp": 648,
+    "mdlx_offset": "0x11d0040",
+    "ai_start_offset": "0x000503ac",
+    "msn_offset": "0x004fa4a0"
   },
   "Oogie Box Dummy": {
     "aiparam": "",
@@ -1499,13 +1622,15 @@
     "animation": "N_WI010_BTL.mset",
     "model": "N_WI010_BTL_VS",
     "name": "Past Pete",
-    "ai_start_offset": "0x6A5CC",
+    "ai_start_offset": "0x0006a5cc",
     "size": 896764,
     "spawns": [],
     "type": "boss",
     "ucm": "0647",
     "enmp": 106,
-    "hp": 250
+    "hp": 250,
+    "mdlx_offset": "0x10a0340",
+    "msn_offset": "0x004fa4a0"
   },
   "Pete Cups": {
     "aiparam": "",
@@ -1541,7 +1666,10 @@
     "type": "boss",
     "ucm": "06BC",
     "enmp": 25,
-    "hp": 598
+    "hp": 598,
+    "mdlx_offset": "0x1247040",
+    "ai_start_offset": "0x00055ffc",
+    "msn_offset": "0x004fa4d0"
   },
   "Pete TR": {
     "aiparam": "",
@@ -1551,7 +1679,10 @@
     "size": 968770,
     "spawns": [],
     "type": "boss",
-    "ucm": "0167"
+    "ucm": "0167",
+    "mdlx_offset": "0x1426b40",
+    "ai_start_offset": "0x00055ffc",
+    "msn_offset": "0x004fa4a0"
   },
   "Prison Keeper": {
     "aiparam": "",
@@ -1567,7 +1698,10 @@
     "type": "boss",
     "ucm": "05CE",
     "enmp": 109,
-    "hp": 1993
+    "hp": 1993,
+    "mdlx_offset": "0xf73040",
+    "ai_start_offset": "0x00103184",
+    "msn_offset": "0x004fa4a0"
   },
   "Rapid Thruster": {
     "aiparam": "",
@@ -1615,7 +1749,10 @@
     "type": "boss",
     "ucm": "063C",
     "enmp": 120,
-    "hp": 997
+    "hp": 997,
+    "mdlx_offset": "0xeb7e40",
+    "ai_start_offset": "0x00059a44",
+    "msn_offset": "0x004fa490"
   },
   "Roxas": {
     "aiparam": "",
@@ -1630,7 +1767,10 @@
     "type": "boss",
     "ucm": "0951",
     "enmp": 189,
-    "hp": 1295
+    "hp": 1295,
+    "mdlx_offset": "0xbf4640",
+    "ai_start_offset": "0x00045004",
+    "msn_offset": "0x004fa4a0"
   },
   "Roxas Oathkeeper Keyblade": {
     "aiparam": "",
@@ -1676,7 +1816,10 @@
     "type": "boss",
     "ucm": "06C9",
     "enmp": 124,
-    "hp": 1495
+    "hp": 1495,
+    "mdlx_offset": "0x1091840",
+    "ai_start_offset": "0x000914ac",
+    "msn_offset": "0x004fa4c0"
   },
   "Saix's Claymore": {
     "aiparam": "",
@@ -1710,7 +1853,10 @@
     "type": "boss",
     "ucm": "035E",
     "enmp": 93,
-    "hp": 499
+    "hp": 499,
+    "mdlx_offset": "0xf73d40",
+    "ai_start_offset": "0x000829ac",
+    "msn_offset": "0x004fa4a0"
   },
   "Scar": {
     "aiparam": "",
@@ -1722,7 +1868,10 @@
     "type": "boss",
     "ucm": "029C",
     "enmp": 89,
-    "hp": 1495
+    "hp": 1495,
+    "mdlx_offset": "0xe80ec0",
+    "ai_start_offset": "0x0006e2fc",
+    "msn_offset": "0x004fa4a0"
   },
   "Seifer": {
     "aiparam": "",
@@ -1748,7 +1897,10 @@
     "type": "boss",
     "ucm": "08B6",
     "enmp": 130,
-    "hp": 1993
+    "hp": 1993,
+    "mdlx_offset": "0xcade40",
+    "ai_start_offset": "0x000add9c",
+    "msn_offset": "0x004fa4a0"
   },
   "Setzer": {
     "aiparam": "",
@@ -1760,7 +1912,10 @@
     "type": "boss",
     "ucm": "082F",
     "enmp": 146,
-    "hp": 499
+    "hp": 499,
+    "mdlx_offset": "0x12cc940",
+    "ai_start_offset": "0x0007553c",
+    "msn_offset": "0x004fa590"
   },
   "Shadow": {
     "aiparam": "",
@@ -1796,7 +1951,10 @@
     "type": "boss",
     "ucm": "0163",
     "enmp": 22,
-    "hp": 449
+    "hp": 449,
+    "mdlx_offset": "0x10cfe40",
+    "ai_start_offset": "0x00023784",
+    "msn_offset": "0x004fa4a0"
   },
   "Shadow WI": {
     "aiparam": "",
@@ -1820,7 +1978,10 @@
     "type": "boss",
     "ucm": "0015",
     "enmp": 70,
-    "hp": 1295
+    "hp": 1295,
+    "mdlx_offset": "0x10a0340",
+    "ai_start_offset": "0x00089f0c",
+    "msn_offset": "0x004fa4d0"
   },
   "Shenzie": {
     "aiparam": "",
@@ -1949,7 +2110,10 @@
     "ucm": "0165",
     "enmp": 24,
     "hp": 1594,
-    "hp_extra_bytes": "0064"
+    "hp_extra_bytes": "0064",
+    "mdlx_offset": "0xfe8340",
+    "ai_start_offset": "0x000d1584",
+    "msn_offset": "0x004fa4a0"
   },
   "Strafer": {
     "aiparam": "",
@@ -1988,7 +2152,10 @@
     "ucm": "096F",
     "enmp": 220,
     "hp": 1871,
-    "hp_extra_bytes": "0032"
+    "hp_extra_bytes": "0032",
+    "mdlx_offset": "0xed9840",
+    "ai_start_offset": "0x00062644",
+    "msn_offset": "0x004fa4a0"
   },
   "The Beast": {
     "aiparam": "",
@@ -2016,7 +2183,10 @@
     "type": "boss",
     "ucm": "05D0",
     "enmp": 110,
-    "hp": 1495
+    "hp": 1495,
+    "mdlx_offset": "0xf2f840",
+    "ai_start_offset": "0x000af904",
+    "msn_offset": "0x004fa4a0"
   },
   "The Experiment Head": {
     "aiparam": "",
@@ -2058,7 +2228,10 @@
     "type": "boss",
     "ucm": "0161",
     "enmp": 73,
-    "hp": 349
+    "hp": 349,
+    "mdlx_offset": "0xfe1e40",
+    "ai_start_offset": "0x00081a84",
+    "msn_offset": "0x004fa4a0"
   },
   "Tifa": {
     "aiparam": "1",
@@ -2070,7 +2243,9 @@
     "type": "boss",
     "ucm": "08FA",
     "enmp": 161,
-    "hp": 598
+    "hp": 598,
+    "mdlx_offset": "0x10d3840",
+    "ai_start_offset": "0x0005e6cc"
   },
   "Tiny Pyramid Dummy": {
     "aiparam": "",
@@ -2126,7 +2301,10 @@
     "type": "boss",
     "ucm": "0133",
     "enmp": 81,
-    "hp": 1495
+    "hp": 1495,
+    "mdlx_offset": "0xacf140",
+    "ai_start_offset": "0x00074a44",
+    "msn_offset": "0x004fa4a0"
   },
   "Vexen": {
     "aiparam": "",
@@ -2141,7 +2319,10 @@
     "ucm": "0933",
     "enmp": 177,
     "hp": 1495,
-    "hp_extra_bytes": "0064"
+    "hp_extra_bytes": "0064",
+    "mdlx_offset": "0xf35840",
+    "ai_start_offset": "0x0007f34c",
+    "msn_offset": "0x004fa4e0"
   },
   "Vivi": {
     "aiparam": "",
@@ -2153,7 +2334,10 @@
     "type": "boss",
     "ucm": "086C",
     "enmp": 145,
-    "hp": 499
+    "hp": 499,
+    "mdlx_offset": "0x12df140",
+    "ai_start_offset": "0x0004ecdc",
+    "msn_offset": "0x004fa590"
   },
   "Volcano Lord": {
     "aiparam": "",
@@ -2168,7 +2352,10 @@
     "type": "boss",
     "ucm": "040B",
     "enmp": 174,
-    "hp": 1196
+    "hp": 1196,
+    "mdlx_offset": "0xfe2040",
+    "ai_start_offset": "0x000b9984",
+    "msn_offset": "0x004fa4a0"
   },
   "Wight Knight NM": {
     "aiparam": "",
@@ -2192,20 +2379,25 @@
     "type": "boss",
     "ucm": "03E5",
     "enmp": 82,
-    "hp": 1495
+    "hp": 1495,
+    "mdlx_offset": "0x10c4e40",
+    "ai_start_offset": "0x000733bc",
+    "msn_offset": "0x004fa4a0"
   },
   "Xemnas": {
     "aiparam": "",
     "animation": "",
     "model": "B_EX170",
     "name": "Xemnas",
-    "ai_start_offset": "0x6A33C",
+    "ai_start_offset": "0x0006a33c",
     "size": 2607408,
     "spawns": [],
     "type": "boss",
     "ucm": "0646",
     "enmp": 85,
-    "hp": 1495
+    "hp": 1495,
+    "mdlx_offset": "0xc49e40",
+    "msn_offset": "0x004fa4a0"
   },
   "Xigbar": {
     "aiparam": "",
@@ -2217,7 +2409,10 @@
     "type": "boss",
     "ucm": "0622",
     "enmp": 123,
-    "hp": 1295
+    "hp": 1295,
+    "mdlx_offset": "0x1173040",
+    "ai_start_offset": "0x0007aebc",
+    "msn_offset": "0x004fa4a0"
   },
   "Yuffie": {
     "aiparam": "1",
@@ -2229,7 +2424,9 @@
     "type": "boss",
     "ucm": "08FB",
     "enmp": 162,
-    "hp": 499
+    "hp": 499,
+    "mdlx_offset": "0x10d3840",
+    "ai_start_offset": "0x000682bc"
   },
   "Zexion": {
     "aiparam": "",
@@ -2244,7 +2441,10 @@
     "type": "boss",
     "ucm": "097B",
     "enmp": 193,
-    "hp": 1196
+    "hp": 1196,
+    "mdlx_offset": "0xf62040",
+    "ai_start_offset": "0x0008557c",
+    "msn_offset": "0x004fa4a0"
   },
   "Zexions Book": {
     "aiparam": "",
