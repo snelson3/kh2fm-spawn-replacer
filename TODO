@@ -1,13 +1,19 @@
-write scripts to get the msn/ai addresses
-add teleport cond
-update kh2lib when releasing this
+
 
 mdlx_offset attribute should be moved into the enemy
     details of this need to be finished, change spawn replacer for this
         also manually handle the double battles
-does setting the level of terra to 0 make him not hurt you hard?
 
-xemnas crashes when you beat him in petes world, thats a buzzkill (is it unique? is it cause of camera thing ?)
+add teleport cond
+update kh2lib when releasing this
+
+
+
+
+
+does setting the level of terra to 1 make him not hurt you hard?
+
+
 
 idk where else to put it but the MSN id shows up in the associated ARD, wtry altering that when trying to load other MSNs from other worlds
     also maybe you could change the world id listed in the ard file
@@ -23,25 +29,4 @@ because I'm a slut, try to fix hydra real quick when testing things tonight
 because I'm a super slut, also look at final xemnas, and mess with pete TR again
 I really wish I could get other stuff in riku to work
 
-ban all the guys requiring fixes from the colloseum battles  (also the rando should have a disableCamera: false option important for colosseum, or just if it doesn't have an MSN option don't do it)
-need to figure out hades msn tomorrow (hard read for it to be HE19_MS205 but that might not be right)
-
-CA12_MEDAL (Grim Reaper I)
-  failed: You should never see this
-HB33_FM_VEX (Data Vexen)
-  failed: You should never see this
-HB33_FM_VEX (Vexen)
-  failed: You should never see this
-TT05_AXEL (Axel I)
-  failed: You should never see this
-
-
-EH24_MS110 (Armor Xemnas)
-  failed: list index out of range
-{'Armor Xemnas': {'mdlx_offset': '0x121d840',
-  'ai_start_offset': '0x00075e04',
-  'msn_offset': '0x004fa4a0'}}
-EH24_MS112 (Armor Xemnas)
-{'Armor Xemnas': {'mdlx_offset': '0x1344b40',
-  'ai_start_offset': '0x00075e04',
-  'msn_offset': '0x004fa4a0'}}
+(also the rando should have a disableCamera: false option important for colosseum, or just if it doesn't have an MSN option don't do it)
