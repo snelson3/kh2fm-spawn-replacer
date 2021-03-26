@@ -7,8 +7,8 @@ ENMP_HP_OFFSET = 0x4
 ENMP_HEADER_LENGTH = 0x8
 ENMP_ENTRY_LENGTH = 0x5C
 class SpawnReplacer:
-    def __init__(self, useCond=True, debug=False, version="xeey"):
-        self.kh2lib = kh2lib(cheatsfn="F266B00B.pnach")
+    def __init__(self, useCond=True, debug=False, version="xeey", fn="F266B00B.pnach"):
+        self.kh2lib = kh2lib(cheatsfn=fn)
         self.locations = json.load(open("locations.json"))
         self.enemies = json.load(open("enemies.json"))
         self.debug = debug
@@ -17,11 +17,11 @@ class SpawnReplacer:
     def getVersionOffset(self, version):
         # Only matters for mdlx hacks
         if version in ["vanilla", "jp"]:
-            return 0
+            return -0x1000
         if version in ["xeey", "xeeynamo"]:
-            return 4096
+            return 0
         if version in ["crazycat"]:
-            return 4096
+            return 0x64
         raise Exception("unknown version")
     def lookupLocation(self, description):
         for loc in self.locations:
@@ -106,7 +106,8 @@ class SpawnReplacer:
                     address = "2" + address[1:]
                     return "{} {}".format(address, value)
                 if os.path.isdir(fixes_dir):
-                    ai_start_offset = int(location_details["mdlx_offset"],16) + self.version_offset + int(new["ai_start_offset"],16) 
+                    # Need to fix the mdlx offset placement later, only works in spots with 1 right now
+                    ai_start_offset = int(location_details["enemies"][0]["mdlx_offset"],16) + self.version_offset + int(new["ai_start_offset"],16) 
                     for fn in os.listdir(fixes_dir):
                         # Fixes are normal ADDRESS VALUE format but ADDRESS is only the offset from the start of the AI file
                         fix = [_getRealAddress(l) for l in open(os.path.join(fixes_dir,fn)).read().split("\n") if l]
@@ -119,7 +120,7 @@ class SpawnReplacer:
             comment += "\n// Disabling intro camera"
             offset_dec = int(location_details["msn_offset"],16) + CAMERA_START_OFFSET
             offset = hex(offset_dec)[2:].upper().zfill(8)
-            value = "00000002" # I think this is fine but double check
+            value = "00000000" # I think this is fine but double check
             codes += ["{} {}".format(offset, value)]
         if "extraCodes" in location and len(location["extraCodes"]) >0:
             codes += location["extraCodes"]
@@ -127,6 +128,8 @@ class SpawnReplacer:
             codes = self.kh2lib.cheatengine.apply_room_cond(self.kh2lib.cheatengine.apply_event_cond(replacements, location_details["event"]),  location_details["room"], location_details["world"])
         else:
             codes = replacements
+        print("sup")
+        print("codes")
         self.kh2lib.cheatengine.apply_ram_code(codes, comment=comment)
         self.kh2lib.cheatengine.write_pnach(debug=self.debug)
     def performReplacement(self, loc=None, description=None, enemylist=None, disableCamera=False):

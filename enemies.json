@@ -822,7 +822,7 @@
     "hp": 50
   },
   "Final Xemnas": {
-    "aiparam": "",
+    "aiparam": "1",
     "animation": "",
     "model": "B_EX170_LAST",
     "name": "Final Xemnas",
